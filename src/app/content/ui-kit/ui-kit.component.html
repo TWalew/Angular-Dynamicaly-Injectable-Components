@@ -7,115 +7,118 @@
   <fa-icon class="fa-2x" [icon]="['fas', 'arrow-alt-circle-left']"></fa-icon>
 </button>
 <router-outlet #myOutlet="outlet"></router-outlet>
-<div class="grid" *ngIf="!myOutlet.isActivated">
-  <h1>Custom Components</h1>
-  <br />
-  <div class="d-flex align-items-center">
-    <h3 class="text-primary"><a class="text-primary" routerLink="/loader-button">Loader Button</a> :</h3>
-    <p>
-      The loader button component is used to simulate loading state for the button while the request is finished.
-    </p>
-  </div>
-  <br />
-  <div class="d-flex align-items-center">
-    <h3 class="text-primary"><a class="text-primary" routerLink="/card-table">Card Table</a> :</h3>
-    <p>
-      The card table component is used for rendering tables / cards or both.
-    </p>
-  </div>
-  <br />
-  <div class="d-flex align-items-center">
-    <h3 class="text-primary"><a class="text-primary" routerLink="/banner">Banner</a> :</h3>
-    <p>
-      The banner component is used to give to the user information and some action with events.
-    </p>
-  </div>
-  <br />
-  <div class="d-flex align-items-center">
-    <h3 class="text-primary"><a class="text-primary" routerLink="/tabs">Tabs</a> :</h3>
-    <p>
-      The tabs component is used to generate a tabs component with dynamic tabs where every tab has it's component.
-    </p>
-  </div>
-  <br />
-  <div class="d-flex align-items-center">
-    <h3 class="text-primary"><a class="text-primary" routerLink="/slider-button">Slider Button</a> :</h3>
-    <p>
-      The slider button is used as a toggle-able on/off switch.
-    </p>
-  </div>
-  <br />
-  <div class="d-flex align-items-center">
-    <h3 class="text-primary"><a class="text-primary" routerLink="/confirm-dialog">Confirm Dialog</a> :</h3>
-    <p>
-      The confirm dialog component is used whenever we want a user to confirm an action.
-    </p>
-  </div>
-  <br />
-  <div class="d-flex align-items-center">
-    <h3 class="text-primary"><a class="text-primary" routerLink="/alert">Alert</a> :</h3>
-    <p>
-      The alert component is used to bring up notifications in the bottom right corner.
-    </p>
-  </div>
-  <br />
-  <div class="d-flex align-items-center">
-    <h3 class="text-primary">
-      <a class="text-primary" routerLink="/circle-progress-bar">Circle Progress Bar</a>
-      :
-    </h3>
-    <p>
-      The circle progress bar component is used to display a circle progress svg.
-    </p>
-  </div>
-  <br />
-  <div class="d-flex align-items-center">
-    <h3 class="text-primary"><a class="text-primary" routerLink="/dialog-header">Dialog Header</a> :</h3>
-    <p>
-      The dialog header component is used to display standart header for dialogs with X button for close and title plus
-      optional icon.
-    </p>
-  </div>
-  <br />
-  <div class="d-flex align-items-center">
-    <h3 class="text-primary"><a class="text-primary" routerLink="/empty-chart">Empty Chart</a> :</h3>
-    <p>
-      The empty chart component is used to display standart empty chart.
-    </p>
-  </div>
-  <br />
-  <div class="d-flex align-items-center">
-    <h3 class="text-primary"><a class="text-primary" routerLink="/heading">Heading</a> :</h3>
-    <p>
-      The heading component is used to display standart colored heading.
-    </p>
-  </div>
-  <br />
-  <div class="d-flex align-items-center">
-    <h3 class="text-primary"><a class="text-primary" routerLink="/progress-bar">Progress Bar</a> :</h3>
-    <p>
-      The progress bar component is used to display progress bar horizontal.
-    </p>
-  </div>
-  <br />
-  <div class="d-flex align-items-center">
-    <h3 class="text-primary"><a class="text-primary" routerLink="/slider-input">Slider</a> :</h3>
-    <p>
-      The slider component is used to display slider bar horizontal.
-    </p>
-  </div>
-  <br />
-  <div class="d-flex align-items-center">
-    <h3 class="text-primary"><a class="text-primary" routerLink="/timeline">Timeline</a> :</h3>
-    <p>
-      The timeline component is used to display timeline horizontal.
-    </p>
-  </div>
-  <br />
-  <div class="d-flex align-items-center">
-    <h3 class="text-primary"><a class="text-primary" routerLink="/widget-loader">Widget Loader</a> :</h3>
-    <p>
-      The widget loader is used to simulate the loading state inside widgets.
-    </p>
+<div id="particles-background"></div>
+<div class="position-center ml-xl-5 mr-xl-5" style="bottom: auto; margin-left: 20%;">
+  <div class="grid" *ngIf="!myOutlet.isActivated">
+    <h1 class="text-left">Custom Components</h1>
+    <br />
+    <div class="d-flex align-items-center">
+      <h3 class="text-primary"><a class="text-primary" routerLink="/loader-button">Loader Button</a> :</h3>
+      <p>
+        The loader button component is used to simulate loading state for the button while the request is finished.
+      </p>
+    </div>
+    <br />
+    <div class="d-flex align-items-center">
+      <h3 class="text-primary"><a class="text-primary" routerLink="/card-table">Card Table</a> :</h3>
+      <p>
+        The card table component is used for rendering tables / cards or both.
+      </p>
+    </div>
+    <br />
+    <div class="d-flex align-items-center">
+      <h3 class="text-primary"><a class="text-primary" routerLink="/banner">Banner</a> :</h3>
+      <p>
+        The banner component is used to give to the user information and some action with events.
+      </p>
+    </div>
+    <br />
+    <div class="d-flex align-items-center">
+      <h3 class="text-primary"><a class="text-primary" routerLink="/tabs">Tabs</a> :</h3>
+      <p>
+        The tabs component is used to generate a tabs component with dynamic tabs where every tab has it's component.
+      </p>
+    </div>
+    <br />
+    <div class="d-flex align-items-center">
+      <h3 class="text-primary"><a class="text-primary" routerLink="/slider-button">Slider Button</a> :</h3>
+      <p>
+        The slider button is used as a toggle-able on/off switch.
+      </p>
+    </div>
+    <br />
+    <div class="d-flex align-items-center">
+      <h3 class="text-primary"><a class="text-primary" routerLink="/confirm-dialog">Confirm Dialog</a> :</h3>
+      <p>
+        The confirm dialog component is used whenever we want a user to confirm an action.
+      </p>
+    </div>
+    <br />
+    <div class="d-flex align-items-center">
+      <h3 class="text-primary"><a class="text-primary" routerLink="/alert">Alert</a> :</h3>
+      <p>
+        The alert component is used to bring up notifications in the bottom right corner.
+      </p>
+    </div>
+    <br />
+    <div class="d-flex align-items-center">
+      <h3 class="text-primary">
+        <a class="text-primary" routerLink="/circle-progress-bar">Circle Progress Bar</a>
+        :
+      </h3>
+      <p>
+        The circle progress bar component is used to display a circle progress svg.
+      </p>
+    </div>
+    <br />
+    <div class="d-flex align-items-center">
+      <h3 class="text-primary"><a class="text-primary" routerLink="/dialog-header">Dialog Header</a> :</h3>
+      <p>
+        The dialog header component is used to display standart header for dialogs with X button for close and title
+        plus optional icon.
+      </p>
+    </div>
+    <br />
+    <div class="d-flex align-items-center">
+      <h3 class="text-primary"><a class="text-primary" routerLink="/empty-chart">Empty Chart</a> :</h3>
+      <p>
+        The empty chart component is used to display standart empty chart.
+      </p>
+    </div>
+    <br />
+    <div class="d-flex align-items-center">
+      <h3 class="text-primary"><a class="text-primary" routerLink="/heading">Heading</a> :</h3>
+      <p>
+        The heading component is used to display standart colored heading.
+      </p>
+    </div>
+    <br />
+    <div class="d-flex align-items-center">
+      <h3 class="text-primary"><a class="text-primary" routerLink="/progress-bar">Progress Bar</a> :</h3>
+      <p>
+        The progress bar component is used to display progress bar horizontal.
+      </p>
+    </div>
+    <br />
+    <div class="d-flex align-items-center">
+      <h3 class="text-primary"><a class="text-primary" routerLink="/slider-input">Slider</a> :</h3>
+      <p>
+        The slider component is used to display slider bar horizontal.
+      </p>
+    </div>
+    <br />
+    <div class="d-flex align-items-center">
+      <h3 class="text-primary"><a class="text-primary" routerLink="/timeline">Timeline</a> :</h3>
+      <p>
+        The timeline component is used to display timeline horizontal.
+      </p>
+    </div>
+    <br />
+    <div class="d-flex align-items-center">
+      <h3 class="text-primary"><a class="text-primary" routerLink="/widget-loader">Widget Loader</a> :</h3>
+      <p>
+        The widget loader is used to simulate the loading state inside widgets.
+      </p>
+    </div>
   </div>
 </div>
