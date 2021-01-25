@@ -1,0 +1,23 @@
+{
+  "extends": ["tslint:recommended", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": ["bin/**", "dist", "node_modules"]
+  },
+  "rulesDirectory": ["codelyzer"],
+  "rules": {
+    "ordered-imports": false,
+    "max-classes-per-file": false,
+    "object-literal-sort-keys": false,
+    "import-name": false,
+    "semicolon": [true, "always"],
+    "no-console": {
+      "severity": "warning",
+      "options": ["debug", "info", "log", "error"]
+    },
+    "interface-name": [true, "never-prefix"],
+    "prefer-array-literal": false,
+    "no-unsafe-any": {
+      "severity": "warning"
+    }
+  }
+}

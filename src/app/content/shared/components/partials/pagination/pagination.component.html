@@ -1,0 +1,41 @@
+<div class="row align-items-center mt-3">
+    <p class="col-lg-6 text-lg-left text-center">
+        {{ 'COMMON.SHOWING' | translate }}
+        {{ (currentPage - 1) * itemsPerPage + 1 }}
+        {{ 'COMMON.TO' | translate | lowercase }} {{ itemsPerPage * currentPage }}
+        {{ 'COMMON.OF' | translate | lowercase }} {{ totalItems }}
+        {{ 'COMMON.ENTRIES' | translate | lowercase }}
+    </p>
+
+    <ul *ngIf="totalItems > itemsPerPage"
+        class="pagination d-flex justify-content-center justify-content-lg-end mt-3 mt-lg-0 col-lg-6">
+        <li>
+            <button mat-ripple class="btn-icon" [disabled]="currentPage === 1"
+                (click)="changePage(pagesArray[currentPage - 2])">
+                <fa-icon [icon]="faAngleLeft"></fa-icon>
+            </button>
+        </li>
+
+        <ng-container *ngFor="let data of pagesArray; index as i">
+            <li *ngIf="data.show">
+                <button mat-ripple class="btn-icon" [ngClass]="data.page === currentPage ? 'is-selected' : ''"
+                    (click)="changePage(data)">
+                    {{ data.page }}
+                </button>
+            </li>
+
+            <li *ngIf="data.dots">
+                <button mat-ripple class="btn-icon" (click)="changePage(data)">
+                    ...
+                </button>
+            </li>
+        </ng-container>
+
+        <li>
+            <button mat-ripple class="btn-icon" [disabled]="currentPage === pagesCount"
+                (click)="changePage(pagesArray[currentPage])">
+                <fa-icon [icon]="faAngleRight"></fa-icon>
+            </button>
+        </li>
+    </ul>
+</div>

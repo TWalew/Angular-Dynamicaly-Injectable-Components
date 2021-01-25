@@ -1,0 +1,88 @@
+<div class="grid">
+    <h1 class="text-center">Confirm Dialog Component</h1>
+    <br>
+    <h3>Purpose : </h3>
+    <p>
+        The confirm dialog component is used whenever we want a user to confirm an action.
+    </p>
+    <br>
+
+    <h3>Usage: </h3>
+
+    <p>To use the dialog modal properly you have to pass some properties to the <b>data</b> object of <b>MatDialog</b>
+    </p>
+
+    <br>
+    <ul>
+        <li>
+            <p>
+                1. <b>title (string)</b> - Used for the title of the dialog. Can be a translation string
+            </p>
+        </li>
+        <li>
+            <p>2. <b>text (string)</b> Used for the additional text below the title.</p>
+        </li>
+        <li>
+            <p>3. <b>confirmButtonText (string)</b> Used for the text of the confirm button. Can be a translation
+                string.</p>
+        </li>
+        <li>
+            <p>4. <b>withCancelButton (boolean)</b> If <b>true</b>, it will show a cancel button for the modal.</p>
+        </li>
+    </ul>
+    <br>
+
+    <p>In your component, inject the <b>MatDialog</b> component: </p>
+    <code class="text-primary">
+        constructor(private dialog: MatDialog) &#123; &#125;
+    </code>
+    <br>
+    <br>
+    <p>Then, pass an object to the <b>data</b> property of <b>MatDialog</b> that corresponds to the
+        <b>ConfirmDialogInterface</b>
+    </p>
+    <br>
+    <code class="text-primary">
+        <pre>
+            public openConfirmDialog() &#123;
+               const dialogRef = this.dialog.open(ConfirmDialogComponent, &#123;.
+                        width: '500px',
+                        panelClass: 'logged-in-dialog'
+                        data: &#123;
+                            title: 'Confirm Dialog',
+                            text: 'Do you confirm this action?',
+                            confirmButtonText: 'COMMON.CONFIRM',
+                            withCancelButton: true,
+                        &#125; as ConfirmDialogInterface,
+                &#125;);
+            &#125;
+
+        </pre>
+    </code>
+
+    <p>To handle the click event, you can subscribe to the <b>afterClosed</b> Observable of the <b>dialogRef</b></p>
+    <br>
+    <code class="text-primary">
+        <pre>
+        dialogRef.afterClosed().subscribe(event => &#123;
+            if (event === 'action') &#123;
+
+            &#125;
+
+            if (event === 'cancel') &#123;
+
+            &#125;
+        &#125;);
+        </pre>
+    </code>
+
+    <br>
+
+    <br>
+    <h3>Example: </h3>
+    <p>You can use the LoadingService and start/stop the loader with the <b>purpose</b> property</p>
+    <br>
+    <button class="btn btn-primary" (click)="openConfirmDialog()">Open Dialog</button>
+    <br>
+
+</div>

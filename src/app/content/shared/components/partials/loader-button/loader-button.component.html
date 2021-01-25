@@ -1,0 +1,21 @@
+<button *ngIf="!isIconButton" [class]="componentClass" mat-button [type]="type" [disabled]="isLoading || isDisabled"
+    (click)="onClick()">
+    <span *ngIf="!isLoading else  loading">
+        <fa-icon class="mr-1" *ngIf="icon" [icon]="[iconCategory, icon]"></fa-icon>
+        {{ buttonTitle | translate }}
+    </span>
+</button>
+
+<button *ngIf="isIconButton" mat-ripple class="btn-icon" [ngClass]="btnIconComponentClass" (click)="onClick()" [disabled]="isLoading || isDisabled">
+    <span class="mb-2 d-block">
+        <fa-icon class="fa-lg" *ngIf="!isLoading; else  loading" [icon]="[iconCategory, icon]"></fa-icon>
+    </span>
+    <span class="d-block">{{ buttonTitle | translate }}</span>
+</button>
+
+<ng-template #loading>
+    <span *ngIf="!spinner" class="loading">{{ (buttonLoadingTitle ? buttonLoadingTitle : 'COMMON.LOADING') | translate }}</span>
+    <span *ngIf="spinner">
+        <mat-spinner diameter="20"></mat-spinner>
+    </span>
+</ng-template>

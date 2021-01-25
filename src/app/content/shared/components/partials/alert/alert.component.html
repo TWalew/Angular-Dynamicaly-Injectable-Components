@@ -1,0 +1,19 @@
+<div [@slideInRightOnEnter] [@fadeOutOnLeave] [class]="'alert ' + config.data.class" [style.background-color]="config.data.color ? config.data.color : ''"
+    (mouseenter)="hovered = !hovered" (mouseleave)="hovered = !hovered" (click)="close()">
+    <div class="alert-close" (click)="close()">
+        <fa-icon [icon]="['fas', 'times']"></fa-icon>
+    </div>
+    <div class="alert-icon">
+        <fa-icon [icon]="config.data.icon"></fa-icon>
+    </div>
+    <div class="alert-content">
+        <div *ngIf="config.data.title" class="alert-title">
+            {{ config.data.title }}
+        </div>
+        <div *ngIf="config.data.text" class="alert-text">
+            {{ config.data.text }}
+        </div>
+    </div>
+    <div #progressBar class="progress-bar">
+    </div>
+</div>

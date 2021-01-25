@@ -1,0 +1,67 @@
+<div class="grid $base-color">
+    <h1 class="text-center">Slider Component</h1>
+    <br>
+    <h3>Purpose : </h3>
+    <br>
+    <p>The slider component is used for displaying a slider input.</p>
+    <br>
+    <br>
+    <h3>Usage : </h3>
+    <br>
+    <p>Custom element: <b>&lt;slider-input>&lt;/slider-input></b></p>
+    <br>
+    <p>To use the slider properly you have to pass some parameters to it's properties.</p>
+    <br>
+    <ul>
+        <li>
+            <p>1. <b>[value] (string)</b> - This property is used to set the value of the slider.</p>
+        </li>
+        <li>
+            <p>2. <b>[min] (number)</b> - This property is used to set the min of the slider.</p>
+        </li>
+        <li>
+            <p>3. <b>[max] (number)</b> - This property is used to set slider of the slider.</p>
+        </li>
+        <li>
+            <p>4. <b>[label] (string)</b> - This property is used to set the label of the slider.</p>
+        </li>
+        <li>
+            <p>5. <b>[sliderValueSymbol] (string)</b> - This property is used to set the balue of the slider.</p>
+        </li>
+        <li>
+            <p>6. <b>[step] (number)</b> - This property is used to set the step of the slider.</p>
+        </li>
+        <li>
+            <p>7. <b>[isDisabled] (boolean)</b> - This property is used to set the isDisabled of the slider.</p>
+        </li>isDisabled
+    </ul>
+    <br>
+    <br>
+    <br>
+    <h3>Example : </h3>
+    <br>
+    <code>
+        <pre class="text-primary">
+            <b>Code used : </b>
+
+                &lt;slider [isDisabled]="false" sliderValueSymbol="%" label="current-account" step="1" [min]="0" [max]="100">
+                &lt;/slider>
+
+                &lt;slider [isDisabled]="true" sliderValueSymbol="%" label="current-account" step="1" [min]="0" [max]="100">
+                &lt;/slider>
+
+        </pre>
+    </code>
+    <br>
+    <br>
+    <div style="width: 500px;">
+        <slider [isDisabled]="false" sliderValueSymbol="%" label="current-account" step="1" [min]="0" [max]="100">
+        </slider>
+        <br>
+        <slider [isDisabled]="true" sliderValueSymbol="%" label="current-account" step="1" [min]="0" [max]="100">
+        </slider>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>

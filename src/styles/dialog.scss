@@ -1,0 +1,280 @@
+.dk-overlay-dark-backdr {
+    transition: opacity .15s linear;
+}
+
+.cdk-overlay-dark-backdrop {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.cdk-overlay-pane {
+    margin-top: 12px;
+    border-radius: 0;
+}
+
+.mat-progress-spinner circle,
+.mat-spinner circle {
+    stroke: $base-color;
+    text-align: center;
+}
+
+.logged-in-dialog-two-factor-verification {
+    min-height: 240px;
+    margin-top: 30px;
+
+    .form-field {
+        border: none;
+        width: 160px !important;
+        background: repeating-linear-gradient(90deg, $base-color 0, $base-color 1ch, transparent 0, transparent 1.5ch) 0 100%/100% 2px no-repeat;
+        color: $base-color;
+        font-size: 2rem;
+        letter-spacing: 0.55rem;
+    }
+
+    .form-field:focus {
+        outline: none;
+        color: $base-color;
+    }
+}
+
+
+.game-dialog {
+    position: relative !important;
+
+    .score {
+        position: absolute;
+        top: -21px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-size: 1.5rem;
+        z-index: 3;
+    }
+
+    .background {
+        background-color: $bg-items;
+    }
+}
+
+.logged-in-dialog {
+    position: relative !important;
+
+    .mat-dialog-container {
+        background-color: $bg-items !important;
+        padding: 0;
+        color: $base-color;
+        box-shadow: $element-shadow;
+        border-radius: 0.1875rem;
+        border: 1px solid rgba(0, 0, 0, .2);
+
+        .mat-dialog-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: $primary-grid $primary-grid 0 $primary-grid;
+            margin: 0;
+            letter-spacing: -.015em;
+            color: $base-items-color !important;
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5 {
+                font-size: 1.0625rem;
+                font-weight: 400;
+                margin-bottom: 0;
+                line-height: 1.5385;
+            }
+
+            .btn-icon {
+                &.icon {
+                    padding: 1.25rem 1.25rem !important;
+                    margin: -1.25rem -1.25rem -1.25rem auto;
+
+                    fa-icon {
+                        color: #333;
+                    }
+
+                    &:hover {
+                        fa-icon {
+                            color: #888;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mat-dialog-inactive-session-title {
+            .counter {
+                text-align: right;
+                color: black;
+            }
+        }
+
+        .mat-dialog-actions+.mat-button {
+            margin-left: 8px;
+        }
+
+        .mat-dialog-content {
+            padding: 1.25rem;
+            margin: 0px;
+
+            .mat-dialog-form {
+                text-align: left;
+            }
+        }
+
+        .mat-dialog-actions {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            min-height: auto;
+            padding: 0 1.25rem 1.25rem;
+            margin: 0;
+
+            .mat-button-wrapper {
+
+                .mat-progress-spinner circle,
+                .mat-spinner circle {
+                    stroke: white;
+                }
+            }
+
+            button {
+                margin-top: 0px !important;
+            }
+
+            button,
+            .action-button {
+                max-width: 200px;
+            }
+        }
+
+        .release-notes {
+            text-align: center;
+        }
+    }
+
+    .mat-select-arrow {
+        color: $base-color !important;
+    }
+
+    mat-select:not(.mat-select-empty) {
+        .mat-select-arrow-wrapper {
+            transform: translateY(0%) !important;
+        }
+    }
+
+    .mat-select-value-text {
+        color: $base-color !important;
+    }
+
+    mat-checkbox {
+        text-align: left;
+        margin-top: 20px;
+
+        .mat-checkbox-label {
+            color: $base-color;
+        }
+
+        .mat-checkbox-frame {
+            border-color: $base-color !important;
+        }
+
+        .mat-ripple-element {
+            background: $primary-color;
+        }
+
+        .mat-primary .mat-pseudo-checkbox-checked {
+            background: $primary-color;
+        }
+    }
+
+    .form-field {
+        .mat-datepicker-toggle-active {
+            color: $primary-color;
+        }
+
+        .mat-icon-button {
+            height: 1.7rem !important;
+
+            svg.mat-datepicker-toggle-default-icon {
+                width: 20px !important;
+                color: $mat-icons-color;
+            }
+        }
+
+        mat-icon {
+            fa-icon {
+                vertical-align: text-top;
+                font-size: 0.8em;
+            }
+        }
+
+        .mat-form-field-outline {
+            background-color: $bg-form-field;
+            border-radius: 5px;
+        }
+
+        .mat-form-field-outline-thick {
+            color: $mat-icons-color !important;
+
+            .mat-form-field-outline-start {
+                border-width: 1.2px !important;
+            }
+
+            .mat-form-field-outline-gap {
+                border-width: 1.2px !important;
+            }
+
+            .mat-form-field-outline-end {
+                border-width: 1.2px !important;
+            }
+        }
+
+        .mat-input-element {
+            color: $base-color;
+
+            &.disabled {
+                cursor: not-allowed;
+            }
+        }
+
+        .mat-form-field-label {
+            color: $base-color;
+        }
+
+        .mat-form-field-required-marker {
+            color: $base-color;
+        }
+
+        .mat-form-field-label {
+            font-size: 0.9rem !important;
+            top: 1.3rem !important;
+        }
+
+        .mat-form-field.mat-focused .mat-form-field-label {
+            color: $base-color !important;
+        }
+    }
+
+    mat-form-field.mat-form-field.mat-form-field-appearance-outline>div.mat-form-field-wrapper>div.mat-form-field-flex>div.mat-form-field-infix {
+        padding: 0.2em 0px;
+    }
+
+    mat-form-field.mat-form-field.mat-form-field-appearance-outline>div.mat-form-field-wrapper>div.mat-form-field-flex>div.mat-form-field-infix>span.mat-form-field-label-wrapper {
+        top: -1.2em;
+    }
+
+    .mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+        transform: translateY(-1.1em) scale(0.75);
+        width: 133.33333%;
+    }
+
+    .mat-form-field-wrapper {
+        padding-bottom: unset;
+    }
+
+    .mat-form-field-subscript-wrapper {
+        position: relative;
+    }
+}

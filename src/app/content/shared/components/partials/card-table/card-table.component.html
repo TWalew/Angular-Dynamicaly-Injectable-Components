@@ -1,0 +1,50 @@
+<div [class]="componentClass + ' table-wrapper'">
+    <div class="table-head" *ngIf="title || filtersComponent || (tableViewComponent && cardViewComponent)">
+        <div class="table-caption" *ngIf="title">
+            <h3>{{ title | translate }} <fa-icon *ngIf="titleIcon" [icon]="['fas', titleIcon]"></fa-icon>
+            </h3>
+        </div>
+        <div #filters *ngIf="filtersComponent"
+            [ngClass]="{'w-100': !title && (tableViewComponent || cardViewComponent)}" class="table-filters mb-3">
+
+        </div>
+        <div *ngIf="tableViewComponent && cardViewComponent" class="table-views">
+            <fa-icon class="fa-2x" [icon]="faTable" [ngClass]="{'active': currentView === 'table'}"
+                (click)="isDisabled && changeView('table')"></fa-icon>
+            <fa-icon class="fa-2x" [icon]="faThList" [ngClass]="{'active': currentView === 'card'}"
+                (click)="!isDisabled && changeView('card')"></fa-icon>
+        </div>
+    </div>
+    <div class="table-body">
+        <div class="table-view" [ngStyle]="{height: componentHeight}"
+            *ngIf="currentView === 'table' && tableViewComponent">
+            <div #tableView>
+            </div>
+            <h5 class="mt-4 text-center" *ngIf="!isLoading && totalItems <= 0 && !titleNoData; else customNoDataYet">
+                {{ 'COMMON.NO_DATA_YET' | translate }}
+            </h5>
+
+            <widget-loader [isLoading]="startWithLoading" [purpose]="purpose"> </widget-loader>
+        </div>
+
+        <div class="card-view" style="position: relative" *ngIf="currentView === 'card' && cardViewComponent">
+            <div class="card-wrapper" #cardView>
+            </div>
+            <h5 class="mt-4 text-center" *ngIf="!isLoading && totalItems <= 0 && !titleNoData; else customNoDataYet">
+                {{ 'COMMON.NO_DATA_YET' | translate }}
+            </h5>
+
+            <widget-loader [isLoading]="startWithLoading" [purpose]="purpose"> </widget-loader>
+        </div>
+    </div>
+
+    <pagination *ngIf="data && withPaginator" [data]="data" [currentPage]="currentPage"
+        [itemsPerPage]="itemsPerPage" [totalItems]="totalItems" (pageChange)="changePage($event)"></pagination>
+</div>
+
+<ng-template #customNoDataYet>
+    <div class="mt-4 text-center">
+        <ng-container *ngTemplateOutlet="titleNoData">
+        </ng-container>
+    </div>
+</ng-template>

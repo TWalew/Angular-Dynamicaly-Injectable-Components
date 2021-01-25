@@ -1,0 +1,134 @@
+/* Screen Sizes */
+$mobile-screen-size: 768px;
+
+/* Grids */
+$primary-grid: 1.250rem;
+$secondary-grid: 1.7rem;
+
+/* Font Options */
+$default-font-size: 0.9rem;
+$default-font-family: Roboto,
+sans-serif;
+
+/* Hamburger */
+$hamburger-layer-color: #ffff;
+$hamburger-layer-width: 1.5rem;
+$hamburger-layer-height: 1.5px;
+$hamburger-padding-x: 0;
+$hamburger-padding-y: 0;
+@import '../../node_modules/hamburgers/_sass/hamburgers/hamburgers';
+
+/* Gray Colors */
+$gray-0: #e8e8e8;
+$gray-100: #fafafa;
+$gray-200: #f5f5f5;
+$gray-300: #c4c4c4;
+$gray-400: #8c8c8c;
+$gray-500: #797979;
+
+$box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+
+:root {
+    --primary-color: #1fcd94;
+    --primary-color-transparent: rgba(31, 205, 148, 0.2);
+    --secondary-color: #00A6A6;
+    --secondary-color-transparent: rgba(0, 166, 166, 0.2);
+    --bg-app: #f5f5f5;
+    --bg-sidenav: #263238;
+    --bg-sidenav-gradient: linear-gradient(270deg, rgba(38, 50, 56, 0.9) 0%, rgba(38, 50, 56, 0.9) 100%);
+    --bg-header: #324148;
+    --mobile-expand-menu-text-color: #333333;
+    --mobile-expand-menu-hover-color: #f5f5f5;
+    --success: #43a047;
+    --danger: #e84138;
+    --warn: #f89406;
+    --info: #2f96b4;
+    --disabled: #8f9090;
+    --disabled-transparent: rgba(143, 144, 144, 0.2);
+    --disabled-rgba: rgba(143, 144, 144, 1);
+    --border-panel-color: rgba(0, 0, 0, .125);
+
+    --bg-form-field: white;
+    --bg-widget-wrapper: white;
+    --bg-items: #fafafa;
+    --bg-footer: white;
+    --bg-loading-block: rgba(255, 255, 255, 0.9);
+    --bg-dropdown: white;
+    --bg-dropdown-item-hover: #f5f5f5;
+    --bg-expand-selected: #324148;
+    --bg-mobile-expand: white;
+    --bg-banking-table-row: #cbcbcb;
+    --bg-table-row-hover: #fafafa;
+    --bg-glass: rgb(255, 255, 255, 0.3);
+
+    --element-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    --sidenav-shadow: none;
+
+    --sidenav-tools: #1e272c;
+
+    --base-color: black;
+    --base-items-color: white;
+
+    --border-top-mobile-expand: #47545b;
+
+    --mat-icons-color: #797979;
+    --mat-tooltip-color: #fff;
+
+    --btc-accounted-color: #000;
+    --notifications-wrapper-color: white;
+}
+
+/* Main Colors */
+$main-background-color: #292a2c;
+$main-background-gradient: linear-gradient(180deg, #292a2c 41%, #1b1c1e 100%);
+
+$header-border-color: #47545b;
+
+$primary-color: var(--primary-color) !important;
+$primary-color-transparent: var(--primary-color-transparent);
+$secondary-color: var(--secondary-color);
+$secondary-color-transparent: var(--secondary-color-transparent);
+$bg-app: var(--bg-app);
+$bg-sidenav:var(--bg-sidenav);
+$bg-sidenav-gradient: var(--bg-sidenav-gradient);
+$bg-header: var(--bg-header);
+$mobile-expand-menu-text-color: var(--mobile-expand-menu-text-color);
+$mobile-expand-menu-hover-color: var(--mobile-expand-menu-hover-color);
+
+$success: var(--success) !important;
+$danger: var(--danger) !important;
+$warn: var(--warn) !important;
+$info: var(--info) !important;
+$disabled: var(--disabled) !important;
+$disabled-transparent: var(--disabled-transparent);
+$disabled-rgba: var(--disabled-rgba);
+
+$bg-form-field: var(--bg-form-field);
+$bg-widget-wrapper: var(--bg-widget-wrapper);
+$bg-widget-wrapper-primary: var(--primary-color-transparent);
+$bg-widget-wrapper-disabled: var(--disabled-transparent);
+$bg-items: var(--bg-items);
+$bg-footer: var(--bg-footer);
+$bg-loading-block: var(--bg-loading-block);
+$bg-dropdown: var(--bg-dropdown);
+$bg-dropdown-item-hover: var(--bg-dropdown-item-hover);
+$bg-expand-selected: var(--bg-expand-selected);
+$bg-mobile-expand: var(--bg-mobile-expand);
+$bg-banking-table-row: var(--bg-banking-table-row);
+$bg-table-row-hover: var(--bg-table-row-hover);
+
+$border-panel-color: var(--border-panel-color);
+
+$base-color: var(--base-color);
+$base-items-color: var(--base-items-color);
+$mat-icons-color: var(--mat-icons-color);
+$mat-tooltip-color: var(--mat-tooltip-color);
+$element-shadow: var(--element-shadow);
+$sidenav-shadow: var(--sidenav-shadow);
+$sidenav-tools: var(--sidenav-tools);
+$btc-accounted-color: var(--btc-accounted-color);
+
+$border-top-mobile-expand: var(--border-top-mobile-expand);
+
+$bg-glass: var(--bg-glass);
+$notifications-wrapper-color: var(--notifications-wrapper-color);

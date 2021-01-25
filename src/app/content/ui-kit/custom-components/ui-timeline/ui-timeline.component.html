@@ -1,0 +1,46 @@
+<div class="grid $base-color">
+    <h1 class="text-center">Timeline Component</h1>
+    <br>
+    <h3>Purpose : </h3>
+    <br>
+    <p>The timeline component is used for displaying a timeline.</p>
+    <br>
+    <br>
+    <h3>Usage : </h3>
+    <br>
+    <p>Custom element: <b>&lt;timeline>&lt;/timeline></b></p>
+    <br>
+    <p>To use the timeline properly you have to pass some parameters to it's properties.</p>
+    <br>
+    <ul>
+        <li>
+            <p>1. <b>[timelineData] (TimelineInterface[])</b> - This property is used to set the timeline data array.
+            </p>
+        </li>
+        <li>
+            <p>2. <b>[currentSelectedIndex] (number)</b> - This property is used to set the current day in the timeline.
+            </p>
+        </li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <h3>Example : </h3>
+    <br>
+    <code>
+        <pre class="text-primary">
+            <b>Code used : </b>
+
+                &lt;timeline [currentSelectedIndex]="currentDay" [timelineData]="topPerformances">&lt;/timeline>
+
+        </pre>
+    </code>
+    <br>
+    <br>
+    <div>
+        <timeline [currentSelectedIndex]="currentDay" [timelineData]="topPerformances"></timeline>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>

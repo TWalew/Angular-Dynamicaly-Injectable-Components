@@ -1,0 +1,67 @@
+<div class="grid $base-color">
+    <h1 class="text-center">Progress Bar Component</h1>
+    <br>
+    <h3>Purpose : </h3>
+    <br>
+    <p>The progress bar component is used for displaying a progress bar.</p>
+    <br>
+    <br>
+    <h3>Usage : </h3>
+    <br>
+    <p>Custom element: <b>&lt;progress-bar>&lt;/progress-bar></b></p>
+    <br>
+    <p>To use the progress bar properly you have to pass some parameters to it's properties.</p>
+    <br>
+    <ul>
+        <li>
+            <p>1. <b>[progressBarLabel] (string)</b> - This property is used to set the label of the progress bar.</p>
+        </li>
+        <li>
+            <p>2. <b>[progress] (number)</b> - This property is used to set the progress.</p>
+        </li>
+        <li>
+            <p>3. <b>[useValue] (boolean)</b> - This property is used to set if the value is used or not.</p>
+        </li>
+        <li>
+            <p>4. <b>[progressValue] (any)</b> - This property is used to set the value of the progress.</p>
+        </li>
+        <li>
+            <p>5. <b>[progressSymbol] (string)</b> - This property is used to set the symbol of the progress.</p>
+        </li>
+        <li>
+            <p>6. <b>[progressClass] (string)</b> - This property is used to set the class of the progress.</p>
+        </li>
+        <li>
+            <p>7. <b>[progressBarClass] (string)</b> - This property is used to set the class of the progress bar.</p>
+        </li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <h3>Example : </h3>
+    <br>
+    <code>
+        <pre class="text-primary">
+            <b>Code used : </b>
+
+                &lt;progress-bar [useValue]="false" progressClass="my-bonuses-progress mt-2"
+                progressBarClass="my-bonuses-progress-bar my-bonuses-warn-bar" [progress]="70">&lt;/progress-bar>
+
+        </pre>
+    </code>
+    <br>
+    <br>
+    <div>
+            <progress-bar [useValue]="true" progressClass="my-bonuses-progress mt-2"
+            progressBarClass="my-bonuses-progress-bar my-bonuses-primary-bar" [progress]="100"></progress-bar>
+            <br>
+            <progress-bar [useValue]="true" progressClass="my-bonuses-progress mt-2"
+            progressBarClass="my-bonuses-progress-bar my-bonuses-warn-bar" [progress]="50"></progress-bar>
+            <br>
+            <progress-bar [useValue]="true" progressClass="my-bonuses-progress mt-2"
+            progressBarClass="my-bonuses-progress-bar my-bonuses-danger-bar" [progress]="20"></progress-bar>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>

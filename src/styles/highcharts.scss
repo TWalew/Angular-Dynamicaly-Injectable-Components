@@ -1,0 +1,96 @@
+.chart {
+    width: 100%;
+    display: block;
+}
+
+.highcharts-background {
+    fill: transparent;
+}
+
+.highcharts-axis-title,
+.highcharts-yaxis-labels,
+.highcharts-axis-labels,
+.highcharts-legend-item,
+.highcharts-tooltip {
+    color: $base-color !important;
+    fill: $base-color !important;
+
+    text {
+        color: $base-color !important;
+        fill: $base-color !important;
+    }
+}
+
+.highcharts-grid-line {
+    stroke: rgba(118, 118, 121, 0.4) !important;
+}
+
+.highcharts-tooltip {
+    opacity: 0.8;
+}
+
+.highcharts-label-box {
+    stroke: $gray-200;
+    fill: $bg-app;
+    opacity: 0.9;
+}
+.highcharts-range-selector-buttons,
+.highcharts-input-group{
+    text {
+        fill: $base-color !important;
+    }
+}
+
+.highcharts-button-disabled {
+    rect {
+        fill: #838386 !important;
+    }
+}
+
+.highcharts-button-normal {
+    rect {
+        fill: $bg-form-field !important;
+    }
+}
+
+.highcharts-button-pressed {
+    rect {
+        fill: black !important;
+    }
+}
+
+.highcharts-button-hover {
+    rect {
+        fill: black !important;
+    }
+}
+
+.highcharts-navigator-handle-left {
+    fill: $bg-widget-wrapper !important;
+}
+
+.highcharts-navigator-handle-right {
+    fill: $bg-widget-wrapper !important;
+}
+
+.highcharts-navigator-mask-inside {
+    fill: rgb(0, 0, 0, 0.2);
+}
+
+.highcharts-scrollbar-button {
+    fill: #838386 !important;
+}
+
+.highcharts-scrollbar-thumb {
+    fill: $bg-app !important;
+}
+
+.highcharts-scrollbar-track {
+    fill: $bg-form-field !important;
+}
+
+.highcharts-range-selector {
+    border: none !important;
+    width: 0 !important;
+    height: 0 !important;
+}

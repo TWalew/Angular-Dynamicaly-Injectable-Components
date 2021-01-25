@@ -1,0 +1,6 @@
+<div mat-dialog-title class="d-flex justify-content-between align-items-center">
+    <h5><fa-icon *ngIf="icon" [icon]="icon"></fa-icon> {{ headerTitle | translate }}</h5>
+    <button (click)="dialogRef.close(data)" class="btn-icon p-0">
+        <fa-icon class="fa-lg" icon="times"></fa-icon>
+    </button>
+</div>

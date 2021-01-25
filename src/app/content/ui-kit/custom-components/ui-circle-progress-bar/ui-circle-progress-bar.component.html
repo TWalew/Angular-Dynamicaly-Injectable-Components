@@ -1,0 +1,55 @@
+<div class="grid $base-color">
+    <h1 class="text-center">Circle Progress Bar Component</h1>
+    <br>
+    <h3>Purpose : </h3>
+    <br>
+    <p>The circle progress bar component is used to display a progress circle svg with icon.</p>
+    <br>
+    <br>
+    <h3>Usage : </h3>
+    <br>
+    <p>Custom element: <b>&lt;circle-progress-bar>&lt;/circle-progress-bar></b></p>
+    <br>
+    <p>To use the circle progress bar properly you have to pass some parameters to it's properties.</p>
+    <br>
+    <ul>
+        <li>
+            <p>1. <b>[circleColor] (string)</b> - This property is used to set the color of the bar and icon.</p>
+        </li>
+        <li>
+            <p>2. <b>[percent] (number)</b> - This property is used to set the percent the progress is at.</p>
+        </li>
+        <li>
+            <p>
+                3. <b>[icon] (string)</b> - This property is used to set the icon that will be displayed inside the
+                circle and uses font awesome icons.
+            </p>
+        </li>
+        <li>
+            <p>4. <b>[componentClass] (string)</b> - This property is used to set the classes of the circle progress bar
+                component.</p>
+        </li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <h3>Example : </h3>
+    <br>
+    <code>
+        <pre class="text-primary">
+            <b>Code used : </b>
+            &lt;circle-progress-bar [percent]="70" componentClass="m-auto" icon="car" circleColor="rgb(31, 205, 148)">
+            &lt;/circle-progress-bar>
+        </pre>
+    </code>
+    <br>
+    <br>
+    <br>
+    <div style="width: 200px">
+        <circle-progress-bar [percent]="70" componentClass="m-auto" icon="car" circleColor="rgb(31, 205, 148)">
+        </circle-progress-bar>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>

@@ -1,0 +1,15 @@
+<div class="slider">
+    <div class="range">
+        <div class="label" [ngStyle]="{ left: progress + '%' }">
+            <div class="drop">
+                <div class="value">{{ value }}{{ sliderValueSymbol }}</div>
+            </div>
+        </div>
+        <div class="input-box">
+            <input [ngClass]="{ 'disabled': isDisabled }" [disabled]="isDisabled" [step]="step" [id]="label"
+                [class]="'fill-' + value" (input)="changeValue($event.target.value)" id="input-range" type="range"
+                [min]="min" [max]="max" [value]="value" />
+            <div class="bar"></div>
+        </div>
+    </div>
+</div>

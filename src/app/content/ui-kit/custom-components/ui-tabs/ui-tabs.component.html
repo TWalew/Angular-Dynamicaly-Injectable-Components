@@ -1,0 +1,89 @@
+<div class="grid">
+    <h1 class="text-center">Dynamic Tabs Component</h1>
+    <br>
+    <h3>Purpose : </h3>
+    <br>
+    <p>The tabs component is used to render material tabs which use a dynamic compoenent for every tab and also have
+        nested functionality to level 2.</p>
+    <br>
+    <br>
+    <h3>Usage : </h3>
+    <br>
+    <p>Custom element: <b>&lt;tab>&lt;/tab></b></p>
+    <br>
+    <p>To use the tab properly you have to pass some parameters to it's propertyes.</p>
+    <br>
+    <ul>
+        <li>
+            <p>
+                1. <b>[tabs] (any)</b> - This property is used to set the ts file with the tabs and their coresponding
+                components.
+            </p>
+        </li>
+        <li>
+            <p>
+                2. <b>[className] (string)</b> - This property is used to set the css classes which the tabs will have.
+            </p>
+        </li>
+        <li>
+            <p>
+                3. <b>[data] (any)</b> - This property is used to set the data to be recieved by the dynamicaly called
+                component.
+            </p>
+        </li>
+    </ul>
+    <br>
+    <h1 style="color: red">IMPORTANT!</h1>
+    <br>
+    <b style="color: red">Also you have to include the modules and components of the components for tabs inside the
+        tab-content.module.ts !!!</b>
+    <br>
+    <br>
+    <b style="color: red">If you want to use data async you'll have to place an *ngIf on the &lt;tab> element like that
+        : *ngIf="data | async as items" and then pass items to the [data] property!!!!</b>
+    <br>
+    <br>
+    <b style="color: red">Also see the example bellow about how to build the .ts file with the tabs and their
+        coresponding components!!!!!</b>
+    <br>
+    <br>
+    <h3 style="color: red">Example file : </h3>
+    <pre class="text-primary">
+            import &#123; ThirdTabNestedComponent &#125; from './../partials/third-tab-nested/third-tab-nested.component';
+            import &#123; FirstTabComponent &#125; from './../partials/first-tab/first-tab.component';
+            import &#123; SecondTabNestedComponent &#125; from '../partials/second-tab-nested/second-tab-nested.component';
+
+            export const tabs: TabInterface&#91;&#93; = &#91;
+                 &#123;
+                    label: 'First TabInterface',
+                    content: FirstTabComponent
+                &#125;,
+                &#123;
+                    label: 'Second TabInterface (nested)',
+                    tabs: &#91;
+                        &#123;
+                            label: 'First Nested TabInterface',
+                            content: SecondTabNestedComponent
+                        &#125;,
+                        &#123;
+                            label: 'Second Nested TabInterface',
+                            content: ThirdTabNestedComponent
+                        &#125;
+                    &#93;
+                &#125;
+            &#93;
+    </pre>
+    <br>
+    <br>
+    <h3>Example : </h3>
+    <br>
+    <code><p><b>Code used : </b> &lt;tab [tabs]="tabs">&lt;/tab></p></code>
+    <br>
+    <br>
+    <div>
+        <tab [tabs]="tabs"></tab>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>

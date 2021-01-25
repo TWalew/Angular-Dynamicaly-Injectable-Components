@@ -1,0 +1,210 @@
+<div class="grid">
+  <h1 class="text-center">Card Table Component</h1>
+  <br />
+  <h3>Purpose :</h3>
+  <br />
+  <p>
+    The card table component is used to render a table or a card. Or if you pass components to both it will dispay a
+    table with a switch for both views.
+  </p>
+  <br />
+  <br />
+  <h3>Usage :</h3>
+  <br />
+  <p>Custom element: <b>&lt;card-table>&lt;/card-table></b></p>
+  <br />
+  <p>To use the card table properly you have to pass some parameters to it's propertyes.</p>
+  <br />
+  <ul>
+    <li>
+      <p>1. <b>[title] (string)</b> - This property is used to set the title for the table.</p>
+    </li>
+    <li>
+      <p>2. <b>[titleIcon] (string)</b> - This property is used to set the icon after title for the table.</p>
+    </li>
+    <li>
+      <p>
+        3. <b>[componentClass] (string)</b> - This property is used to set the css classes which the table will have.
+      </p>
+    </li>
+    <li>
+      <p>4. <b>[itemsPerPage] (number)</b> - This property is used to set the number of items rendered on one page.</p>
+    </li>
+    <li>
+      <p>
+        5. <b>[totalItems] (number)</b> - This property is used to set the number of total items so the pagination can
+        count the number of pages. Used in case the request for the data is using bakend filters.
+      </p>
+    </li>
+    <li>
+      <p>
+        7. <b>[displayNoData] (boolean)</b> - This property is used to show/hide No data yet. It's true by default so
+        you only need to set it when you don't want the 'No data yet!' message.
+      </p>
+    </li>
+    <li>
+      <p>
+        8. <b>[filtersComponent] (Type&ltany>)</b> - This property is used to pass a component to be used as a template
+        for the filters of the table. If not passed table stays without filters. To see how to make filters work
+        <a href="#filters">CLICK HERE</a>
+      </p>
+    </li>
+    <li>
+      <p>
+        9. <b>[tableViewComponent] (Type&ltany>)</b> - This property is used to pass a component to be used as a
+        template for the table view.
+      </p>
+    </li>
+    <li>
+      <p>
+        10. <b>[cardViewComponent] (Type&ltany>)</b> - This property is used to pass a component to be used as a
+        template for the card view.
+      </p>
+    </li>
+    <li>
+      <p>
+        11. <b>[currentView] (string)</b> - This property is used to set the default view. table / card. By default it's
+        set to table so if you want a card view set it to 'card'!
+      </p>
+    </li>
+    <li>
+      <p>
+        12. <b>[purpose] (string)</b> - This property is used to set the purpose of the table in case we need to
+        manipulate results based on filters and rerender table.
+      </p>
+    </li>
+    <li>
+      <p>13. <b>[data] (any[])</b> - This property is used to pass data for the table / card.</p>
+    </li>
+    <li>
+      <p>
+        14. <b>[additionalData] (any)</b> - This property is used to pass additional data for the table / card. Used in
+        case of static rows.
+      </p>
+    </li>
+  </ul>
+  <br />
+  <h1 style="color: red">IMPORTANT!</h1>
+  <br />
+  <b style="color: red">
+    Also you have to include the modules and components of the components for table and card views inside the
+    card-table.module.ts !!!
+  </b>
+  <br />
+  <br />
+  <h1 id="filters" style="color: red">LOADING AND DYNAMIC RERENDER!</h1>
+  <br />
+  <br />
+  <b style="color: red">
+    In order to rerender your table based on change in filters for example you have to use the LoadingService. To
+    rerender you have to start in your method for getting the data before the subscribe and then stop inside the
+    subscribe. You have to pass only 1 property to the start and that's the card-table purpose. For the stop you have to
+    pass the purpose and aslo the new data you have. You can also pass additional data as a third property if you need.
+    <br />
+    <br />
+    EXAMPLE :
+    <code>
+      <pre class="text-primary">
+                    public getData(): void &#123;
+                        this.loadingService.start(this.tablePurpose);
+                        this.apiService.getData(this.filters).subscribe(
+                            (data) => &#123;
+                                this.loadingService.stop(this.tablePurpose, data);
+                            &#125;
+                        )
+                    &#125;
+            </pre
+      >
+    </code>
+  </b>
+  <br />
+  <br />
+  <h1 id="filters" style="color: red">FILTERS!</h1>
+  <br />
+  <br />
+  <b style="color: red">
+    If you want to use filters first you have to pass a filter component to be used to filtersComponent property of the
+    table. After that you must include the filters service in the filters component and make a change method from which
+    you'll pass the purpose of the filter along with the value from the filter to the service.
+    <br />
+    <br />
+    <h3>THE PURPOSE MUST BE THE QUERRY PARAM WITH WHICH YOU WANT TO PASS THE FILTER!!!</h3>
+    <br />
+    <br />
+    EXAMPLE :
+    <code>
+      <pre class="text-primary">
+                    public filterChange(purpose: string, value: string) &#123;
+                        this.filterService.change(purpose, value)
+                    &#125;
+            </pre
+      >
+    </code>
+    <br />
+    <br />
+    After that you'll need to subscribe to the filter service in the component in which you include the card-table.
+    <br />
+    <br />
+    EXAMPLE :
+    <br />
+    <br />
+    <code>
+      <pre class="text-primary">
+                        constructor(
+                           private filterService: FiltersService
+                        ) &#123;
+                           this.filterService.subscribe(this.onFilterEvent.bind(this));
+                        &#125;
+                   </pre
+      >
+    </code>
+    <br />
+    <br />
+    After that you must provide the onFilterEvent method in which you will change the filters and rerender the table.
+    But before that you mus declare this.filters like that : public filters: &#123; [key: string]: string | number
+    &#125; = &#123;&#125;;
+    <br />
+    <br />
+    EXAMPLE :
+    <br />
+    <br />
+    <code>
+      <pre class="text-primary">
+                    private onFilterEvent(event: FilterEventInterface) &#123;
+                        if (event.data) &#123;
+                            this.filters[event.purpose] = event.data;
+                            this.selectBankAccount(this.chosenAccount);
+                        &#125; else &#123;
+                            delete this.filters[event.purpose];
+                            this.selectBankAccount(this.chosenAccount);
+                        &#125;
+                    &#125;
+            </pre
+      >
+    </code>
+  </b>
+  <br />
+  <br />
+  <h3>Example :</h3>
+  <br />
+  <pre class="text-primary">
+        <b>Code used : </b>
+
+        &lt;card-table componentName="exampleTable" [title]="'TABLE'" [purpose]="'ui-kit-table-demo'" [itemsPerPage]="'10'" [tableViewComponent]="tableView" [cardViewComponent]="cardView">&lt;/card-table>
+    </pre>
+  <br />
+  <br />
+  <div class="grid">
+    <card-table
+      componentName="exampleTable"
+      [title]="'TABLE'"
+      [purpose]="'ui-kit-table-demo'"
+      [itemsPerPage]="'10'"
+      [tableViewComponent]="tableView"
+      [cardViewComponent]="cardView"
+    ></card-table>
+  </div>
+  <br />
+  <br />
+  <br />
+</div>

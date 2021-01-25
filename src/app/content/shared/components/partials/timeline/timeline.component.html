@@ -1,0 +1,33 @@
+ <div #divWrapper class="d-flex align-items-center w-100" [ngClass]="showArrow ? 'justify-content-between' : 'justify-content-center'">
+    <div class="arrow-left" [hidden]="!showArrow">
+        <button (click)="onSideScroll('left')" class="btn-icon" style="padding: 0.4rem 0.4rem !important;" mat-button>
+            <fa-icon class="fa-lg" icon="chevron-left"></fa-icon>
+        </button>
+    </div>
+
+    <div #horizontalTimeline class="horizontal-timeline"
+         [ngClass]="showArrow ? 'justify-content-start' : 'justify-content-center'"
+         [ngStyle]="{ width: this.timelineData.length * 100, 'overflow-x': showArrow ? 'scroll' : 'unset' }">
+        <div *ngFor="let data of timelineData; index as i; last as last; first as first"
+             [ngStyle]="{ height: showArrow ? 'unset' : '25px', width: showArrow ? '1px' : '25px', 'margin-left': first && showArrow ? '50px' : '' }"
+             class="timeline-circle {{last ? 'm-0' : ''}}"
+             [ngClass]="i === currentSelectedIndex ? 'active-timeline-circle selected-timeline-circle' :
+          currentSelectedIndex > i ? 'active-timeline-circle' : ''">
+            <span *ngIf="first; else backLine" class="timeline-back-line-in"></span>
+            <ng-template #backLine>
+                <span class="timeline-back-line"></span>
+            </ng-template>
+            <span class="timeline-top-label">{{ data.value }}</span>
+            <span class="timeline-bottom-label">{{ data.label }}</span>
+
+            <span *ngIf="last" class="timeline-front-line-out"></span>
+        </div>
+    </div>
+
+    <div class="arrow-right" [hidden]="!showArrow">
+        <button (click)="onSideScroll('right')" mat-button class="btn-icon" style="padding: 0.4rem 0.4rem !important;">
+            <fa-icon class="fa-lg" icon="chevron-right"></fa-icon>
+        </button>
+    </div>
+
+</div>

@@ -1,0 +1,1336 @@
+{
+  "COMMON": {
+    "FORM": {
+      "USERNAME": "Username",
+      "EMAIL": "Email",
+      "REMEMBER_ME": "Remember me",
+      "REFERRAL_CODE": "Referral Code",
+      "PASSWORD": "Password",
+      "CONFIRM_PASSWORD": "Confirm Password",
+      "NEW_PASSWORD": "New password",
+      "COMPANY_NAME": "Company Name",
+      "DEPARTMENT": "Department",
+      "VAT_NUMBER": "VAT Number",
+      "FIRST_NAME": "First Name",
+      "LAST_NAME": "Last Name",
+      "BIRTH_DATE": "Birth Date",
+      "NATIONALITY": "Nationality",
+      "STREET_ADDRESS_1": "Street Address 1",
+      "STREET_ADDRESS_2": "Street Address 2",
+      "CITY": "City",
+      "STATE": "State",
+      "ZIP_CODE": "Zip Code",
+      "COUNTRY": "Country",
+      "WALLET": "Wallet",
+      "PASSPORT": "Passport",
+      "NUMBER": "Number",
+      "DOCUMENT_TYPE": "Document type",
+      "PASSPORT_NUMBER": "Passport number",
+      "NATIONAL_ID": "National ID",
+      "NATIONAL_ID_FRONT": "National ID Front",
+      "NATIONAL_ID_BACK": "National ID Back",
+      "SCANNED_NATIONAL_ID": "Scanned national ID",
+      "PHOTO": "Photo",
+      "REGISTRATION_DOCUMENT": "K-Bis / Registration Document",
+      "SEARCH": "Search",
+      "MAX_LEVEL": "Max level",
+      "SELLING_BONUS": "Selling Bonus",
+      "SUBSCRIPTION_DATE": "Subscription Date",
+      "VIP": "Vip",
+      "AMOUNT": "Amount",
+      "COMMENT": "Comment",
+      "ACCOUNT": "Account",
+      "FULL_NAME": "Full Name",
+      "STATUS": "Status",
+      "MOBILE_PHONE_NUMBER": "Mobile Phone Number",
+      "CONFIRMATION_CODE": "Confirmation Code",
+      "ADD_NEW_WALLET": "Add new wallet",
+      "ORDER_TYPE": "Order Type",
+      "LOGIN_STRATEGY": "Login Strategy",
+      "2FA_CODE": "2FA Code",
+      "ESTIMATED": "Estimated",
+      "PRICE": "Price",
+      "WITHDRAW_PERCENT": "Withdraw Percent",
+      "EXPIRY_DATE": "Expiry date",
+      "PLEASE_UPLOAD_TEXT": "Please upload the backside if not present in the ID (front side) field.",
+      "POWER_OF_ATTORNEY": "Power of attorney",
+      "MIN_SELLING_BONUS": "Min selling bonus",
+      "MAX_SELLING_BONUS": "Max selling bonus",
+      "REMAINING_CAPITAL": "Capital Remaining (max 5BTC)"
+    },
+    "FORM_ERRORS": {
+      "USERNAME": {
+        "EMPTY": "Please enter a username."
+      },
+      "EMAIL": {
+        "EMPTY": "Please enter your email.",
+        "INVALID": "Please enter a valid email."
+      },
+      "PASSWORD": {
+        "EMPTY": "Please enter your password.",
+        "VALIDATION_1": "Use at least 8 characters.",
+        "VALIDATION_2": "Use upper and lower case characters.",
+        "VALIDATION_3": "Use 1 or more numbers.",
+        "VALIDATION_4": "Use 1 or more special characters.",
+        "PASSWORDS_DONT_MATCH": "Passwords don't match!"
+      },
+      "NEW_PASSWORD": {
+        "EMPTY": "Please enter your password."
+      },
+      "CONFIRM_PASSWORD": {
+        "EMPTY": "Please repeat your password.",
+        "DOESNT_MATCH": "Passwords doesn't match."
+      },
+      "REFERRAL_CODE": {
+        "EMPTY": "Please enter a referral code."
+      },
+      "COMPANY_NAME": {
+        "EMPTY": "Please enter your company name."
+      },
+      "DEPARTMENT": {
+        "EMPTY": "Please enter your department."
+      },
+      "VAT_NUMBER": {
+        "EMPTY": "Please enter your VAT number."
+      },
+      "FIRST_NAME": {
+        "EMPTY": "Please enter your first Name."
+      },
+      "LAST_NAME": {
+        "EMPTY": "Please enter your last name."
+      },
+      "FULL_NAME": {
+        "EMPTY": "Please enter your full name."
+      },
+      "BIRTH_DATE": {
+        "EMPTY": "Please enter your birth date.",
+        "INVALID": "You must be over 18 to submit."
+      },
+      "NATIONALITY": {
+        "EMPTY": "Please choose your nationality."
+      },
+      "STREET_ADDRESS_1": {
+        "EMPTY": "Please enter your street address."
+      },
+      "CITY": {
+        "EMPTY": "Please enter your city."
+      },
+      "STATE": {
+        "EMPTY": "Please enter your state."
+      },
+      "ZIP_CODE": {
+        "EMPTY": "Please enter your ZIP code."
+      },
+      "COUNTRY": {
+        "EMPTY": "Please enter your country."
+      },
+      "WALLET": {
+        "EMPTY": "Please enter your wallet ID.",
+        "INVALID": "Invalid wallet ID."
+      },
+      "DOCUMENT_NUMBER": {
+        "EMPTY": "Please enter your document number."
+      },
+      "DOCUMENT_FILE": {
+        "INVALID": "Allowed types of file are (.png | .jpeg | .pdf).",
+        "EMPTY": "Please upload your document file."
+      },
+      "2FA_CODE": {
+        "EMPTY": "Please enter your 2FA code.",
+        "WRONG": "The code contains 6 digits.",
+        "INVALID": "Invalid 2FA code."
+      },
+      "AMOUNT": {
+        "EMPTY": "Please enter an amount.",
+        "MINIMUM": "Minimum amount 0.1 BTC."
+      },
+      "EXPIRY_DATE": {
+        "EMPTY": "Please enter your document expiry date."
+      }
+    },
+    "ALERTS": {
+      "AN_ERROR_OCCURED": "An error occured!",
+      "EMAIL_CONFIRMATION_TEXT": "Please check your mailbox in order to confirm your email.",
+      "EMAIL_CONFIRMATION": "Email Confirmation",
+      "WALLET_CONFIRMATION_TEXT": "Please check your mailbox in order to confirm your wallet.",
+      "WALLET_CONFIRMED_TEXT": "Your wallet has been successfully confirmed.",
+      "PASSWORD_CHANGED_TEXT": "Password has been changed successfully.",
+      "PASSWORD_CHANGE": "Password Changed",
+      "PRODUCT_ACTIVATE": "Product claimed",
+      "PRODUCT_ACTIVATE_SUCCESS_TEXT": "Product has been claimed successfully.",
+      "PRODUCT_ACTIVATE_ERROR_TEXT": "Can't claim this product.",
+      "ORDER_CREATED": "Order Created",
+      "ORDER_CREATED_TEXT": "Your order has been created.",
+      "WITHDRAW_REQUEST": "Withdraw Request",
+      "WITHDRAW_REQUEST_SUCCESS_TEXT": "Your withdraw request has been sent.",
+      "WITHDRAW_REQUEST_ERROR_TEXT": "You already send your withdraw request.",
+      "REINVESTMENT_RATIO": "Reinvestment Ratio",
+      "REINVESTMENT_RATIO_SUCCESS_TEXT": "You successfully change your reinvestment ratio.",
+      "REINVESTMENT_RATIO_ERROR_TEXT": "Can't change your ratio.",
+      "REFERRAL_LINK_COPY_TEXT": "Your referral is copied to the clipboard.",
+      "USER_PASSWORD_RESET": "Password Reset",
+      "USER_PASSWORD_RESET_SUCCESS_TEXT": "Email has been sent to the user.",
+      "USER_PASSWORD_RESET_ERROR_TEXT": "Request is already send to the user.",
+      "USER_2FA_RESET": "2FA Reset",
+      "USER_2FA_RESET_SUCCESS_TEXT": "User 2FA has been successfully reset.",
+      "RESEND_EMAIL_CONFIRMATION_AFTER_REGISTER": "Your confirmation email has been sent successfully.",
+      "EMAIL_HAS_ALREADY_BEEN_SENT_ERROR_TEXT": "Email has already been sent.",
+      "FORCE_PAYMENT_SUCCESS_TEXT": "You successfully forced payment for that order."
+    },
+    "DATES": {
+      "SUNDAY": "Sunday",
+      "MONDAY": "Monday",
+      "TUESDAY": "Tuesday",
+      "WEDNESDAY": "Wednesday",
+      "THURSDAY": "Thursday",
+      "FRIDAY": "Friday",
+      "SATURDAY": "Saturday"
+    },
+    "ORDER_STATUS": {
+      "NEW": "Created",
+      "VALIDATED": "Waiting for payment",
+      "FULFILLED": "Processing",
+      "COMPLETED": "Completed"
+    },
+    "LOGIN": "Login",
+    "REQUEST": "Request",
+    "FORGOT_PASSWORD": "Forgot Password",
+    "CHANGE": "Change",
+    "WELCOME_MESSAGE": "Welcome to Arbistar !",
+    "NEXT": "Next",
+    "VALIDATE": "Validate",
+    "VALID": "Valid",
+    "ACTIVE": "Active",
+    "REFRESH": "Refresh",
+    "REJECT": "Reject",
+    "PREVIOUS": "Previous",
+    "SKIP": "Skip",
+    "INDIVIDUAL": "Individual",
+    "INSTITUTION": "Institution",
+    "DOCUMENTS_SUCCESSFULLY_UPLOADED": "Document successfully uploaded",
+    "SUCCESS": "Success!",
+    "ERROR": "An error occurred!",
+    "REFUNDED": "Refunded",
+    "SUBMITTING": "Submitting",
+    "LOADING": "Loading",
+    "NO_FILE_SELECTED": "No file selected",
+    "ADD_USER": "Add user",
+    "FREE_WITH_VIP": "Free with VIP License",
+    "ALL": "All",
+    "YES": "Yes",
+    "NO": "No",
+    "RESET_2FA": "Reset 2FA",
+    "RESET_PASSWORD": "Reset Password",
+    "FROM": "From",
+    "TILL": "Till",
+    "TO": "To",
+    "OPERATIONS": "Operations",
+    "CATEGORY": "Category",
+    "OPERATION": "Operation",
+    "LABEL": "Label",
+    "QUANTITY": "Quantity",
+    "UNIT_PRICE": "Unit price",
+    "DAY": "DAY",
+    "DEBIT": "Debit",
+    "CREDIT": "Credit",
+    "RATE": "Rate",
+    "CANCEL": "Cancel",
+    "REFUND": "Refund",
+    "CONFIRM": "Confirm",
+    "EXPORT": "Export",
+    "IMPORT": "Import",
+    "DATE": "Date",
+    "ID": "Id",
+    "LEVEL": "Level",
+    "REWARDING_TYPE": "Rewarding Type",
+    "STATUS": "Status",
+    "COMMISSIONS": "Commissions",
+    "REFERRAL_USER": "Referral User",
+    "GRAPH": "Graph",
+    "SHOW_ALL": "Show all",
+    "SHOW_LESS": "Show less",
+    "TABLE": "Table",
+    "WALLETS": "Wallets",
+    "DOCUMENTS": "Documents",
+    "DOCUMENT": "Document",
+    "EXTENSION": "Extension",
+    "CREATOR": "Creator",
+    "TYPE": "Type",
+    "TOTAL_AMOUNT": "Total Amount",
+    "ROLE": "Role",
+    "ACTION": "Action",
+    "DOWNLOAD": "Download",
+    "DOWNLOADING": "Downloading... Please Wait",
+    "COMMUNITY_BOT": "Community Bot",
+    "PERSONAL_BOT": "Personal Bot",
+    "LICENSES": "Licenses",
+    "REJECTED": "Rejected",
+    "PENDING": "Pending",
+    "VIEW": "View",
+    "REQUEST_WITHDRAW": "Request Withdraw",
+    "INFO": "Info",
+    "LOCK": "Lock",
+    "UNLOCK": "Unlock",
+    "DELETE": "Delete",
+    "2FA": "2FA",
+    "NONE": "None",
+    "DEVICE": "Device",
+    "PRODUCTS": "Products",
+    "CHOSE_PRODUCT": "Chose Product",
+    "SERIAL": "Serial",
+    "EXPIRY": "Expiry",
+    "NEVER": "Never",
+    "NO_DATA_YET": "No data yet!",
+    "CREATE": "Create",
+    "EXTEND": "Extend",
+    "MESSAGE": "Message",
+    "SCOPE": "Scope",
+    "EDIT": "Edit",
+    "ICON": "Icon",
+    "SUBMIT": "Submit",
+    "NOTIFICATIONS": "Notifications",
+    "SHARE": "Share",
+    "GET_MEMBERS": "Get members",
+    "ACTIONS": "Actions",
+    "EMAIL_CONFIRMATION": "Email confirmation",
+    "RESEND_CONFIRMATION": "Resend Confirmation",
+    "RESEND_EMAIL_CONFIRMATION": "Resend Email Confirmation",
+    "RESEND": "Resend",
+    "INVOICE": "Invoice",
+    "ARBI_NEWS": "Arbi News",
+    "COMMUNITY_BOT_INVEST": "Community Bot Invest",
+    "PERSONAL_BOT_LICENSE": "Personal Bot Licence",
+    "PIPSTER_LICENSE": "Pipster Licence",
+    "SEND_CODE": "Send Code",
+    "SEND": "Send",
+    "EXPIRY_DATE": "Expiry Date",
+    "PURCHASE_DATE": "Purchase Date",
+    "INFOS": "Infos",
+    "LICENSE": "License",
+    "RENEW": "Renew",
+    "ACTIVATE": "Activate",
+    "CLAIM": "Claim",
+    "VIEW_INVOICE": "View Invoice",
+    "BUY": "Buy",
+    "INVEST": "Invest",
+    "BUY_LICENSE": "Buy License",
+    "ACTIVATE_THE_LICENSE": "Claim the License",
+    "IN": "in",
+    "ORDERING": "Ordering",
+    "PAY": "Pay",
+    "PAY_THE_ORDER": "Pay the order",
+    "PAYED": "Payed",
+    "EXTRA": "Extra",
+    "START": "Start",
+    "OWNED": "Owned",
+    "FAILED": "Failed",
+    "PAID": "Paid",
+    "FORCE_PAYMENT": "Force payment",
+    "NEW": "New",
+    "COMPLETED": "Completed",
+    "VALIDATED": "Pending for payment",
+    "USER": "User",
+    "SUPPORT": "Support",
+    "SYSTEM": "System",
+    "PASSPORT": "Passport",
+    "ACTIVATING": "Activating",
+    "CLAIMING": "Claiming",
+    "INVESTING": "Investing",
+    "CANCELED": "Canceled",
+    "EXPIRE": "Expire",
+    "EXPIRED": "Expired",
+    "PAYOUT": "Payout",
+    "SCHEDULED": "Scheduled",
+    "WITHDRAW": "Withdraw",
+    "SETTINGS": "Settings",
+    "OK": "Ok",
+    "SET_DEFAULT": "Set Default",
+    "ORDERS": "Orders",
+    "ENABLED": "Enabled",
+    "DISABLED": "Disabled",
+    "OLD": "Old",
+    "SETUP": "Setup",
+    "NO_TYPE": "No type",
+    "ROI": "ROI",
+    "TODAY": "Today",
+    "WEEKLY": "Weekly",
+    "MONTHLY": "Monthly",
+    "PROFITS": "Profits",
+    "REINVESTMENT": "Reinvestment",
+    "COMMISSION": "Commission",
+    "SELLING_BONUS": "Selling Bonus",
+    "BONUS_1": "Bonus 1",
+    "BONUS_2": "Bonus 2",
+    "BONUS_3": "Bonus 3",
+    "COPY": "Copy",
+    "DISABLE": "Disable",
+    "NETWORK": "Network",
+    "NO_REFERRAL_USER": "No referral user",
+    "USERS_LIST": "Users List",
+    "RESET": "Reset",
+    "ENABLE": "Enable",
+    "TOTAL": "Total",
+    "ADD": "Add",
+    "AVERAGE": "average",
+    "COMPLETE_LATER": "Complete Later",
+    "STORE": "Store",
+    "BUY_LATER": "Buy Later",
+    "CLOSE": "Close",
+    "KYC": "KYC",
+    "KYC_FORM": "KYC form.",
+    "SHOWING": "Showing",
+    "OF": "of",
+    "ENTRIES": "entries",
+    "THEME": "Theme",
+    "LIGHT": "Light",
+    "DARK": "Dark",
+    "ROLE_USER": "User",
+    "ROLE_SUPPORT": "Support",
+    "ROLE_ADMIN": "Admin",
+    "ROLE_SUPER_ADMIN": "Super Admin",
+    "ROLE_TESTER": "Tester",
+    "ROLES": "Roles",
+    "LANGUAGE": "Language",
+    "ENGLISH": "English",
+    "SPANISH": "Spanish",
+    "PAID_AT": "Paid date",
+    "GO_TO_PROFILE": "Go to profile",
+    "CLICK_HERE": "click here",
+    "LOGOUT": "Logout",
+    "DAYS_REMAINING": "days remaining",
+    "DELETED_ON": "Deleted on",
+    "CONTRIBUTION": "Contribution",
+    "WORLD": "World",
+    "LEADERSHIP": "Leadership",
+    "OPTIONS": "Options",
+    "WALLET_ADDRESS": "Wallet Adress"
+  },
+  "LOADING_APP": {
+    "LOADING_APP_TEXT": "Loading app",
+    "FETCHING_DATA_TEXT": "Fetching server data with the speed of light",
+    "WAIT_STUFF_TEXT": "Wait crazy stuff will happen"
+  },
+  "APP_ERRORS": {
+    "402": "Payment required.",
+    "403": "Not allowed to access this resource.",
+    "404": "Resource doesn't exists.",
+    "429": "You reach your rate limit.",
+    "500": "Server crashed.",
+    "503": "Service is temporary unavailable and will be online any time soon.",
+    "529": "Web Server is temporary unavailable and will be online any time soon."
+  },
+  "NAVIGATIONS": {
+    "PROFILE": "Profile"
+  },
+  "SIDE_MENU": {
+    "CATEGORIES": {
+      "MAIN": "Main",
+      "PRODUCTS": "Products",
+      "COMMUNITY": "Community",
+      "ADMINISTRATION": "Administration",
+      "MY_ACCOUNT": "Account",
+      "MY_NETWORK": "Network",
+      "NOTIFICATIONS": "Notifications",
+      "BANKING": "Banking"
+    },
+    "PAGES": {
+      "DASHBOARD": "Dashboard",
+      "COMMUNITY_BOT": "Community bot",
+      "PERSONAL_BOT": "Personal bot",
+      "ARBI_PAY_CARD": "ArbiPayCard",
+      "PRODUCTS": "Products",
+      "FINANCE": "My Finance",
+      "NETWORK": "Network",
+      "WITHDRAW": "Withdraw",
+      "ACTIVITY": "Activity",
+      "USER_LIST": "Users",
+      "IDS_VALIDATION": "IDs Validation",
+      "COMMUNIQUES": "Communiques",
+      "BOT_PROFITS": "Bot Profits",
+      "MY_PROFILE": "My profile",
+      "SECURITY_SETTINGS": "Security",
+      "KYC_REVIEW": "KYC Review",
+      "ORDERS": "Orders",
+      "LICENSES": "Licenses",
+      "NETWORK_MAPPING": "Members",
+      "NETWORK_PERFORMANCE": "Performances",
+      "STORE": "Store",
+      "MY_BONUS": "My Bonus",
+      "NETWORKING": "Networking",
+      "NETWORK_MAP": "Map"
+    }
+  },
+  "HEADER_PROFILE_DROPDOWN": {
+    "MY_PROFILE": "My profile",
+    "MY_BALANCE": "My balance",
+    "USER_LIST": "User List",
+    "IDS_VALIDATION": "IDs Validation",
+    "LOGOUT": "Logout"
+  },
+  "HEADER_BUTTON_ACTIONS": {
+    "IMPERSONATING": "Stop impersonating"
+  },
+  "GLOBAL_MESSAGES": {
+    "SECURITY": {
+      "MESSAGE": "Security is important ! Complete",
+      "LINK_TEXT": "my profile"
+    },
+    "DOWNLOAD": {
+      "ERROR_ALERT": {
+        "CONTENT": "Failed to download from server. Please try again later."
+      }
+    }
+  },
+  "CONFIRM_DIALOGS": {
+    "RESET_USER_PASSWORD_TITLE": "Reset User Password",
+    "RESET_USER_PASSWORD_TEXT": "Do you want to reset this user password?",
+    "RESET_USER_2FA_TITLE": "Reset User 2FA",
+    "RESET_USER_2FA_TEXT": "Do you want to reset this user 2fa?",
+    "COMMUNITY_BOT_INVESTED": "Thank you for investing in Arbistar Community Bot. Your invoice will be created once the order is confirmed. Please note that your investment will be available for the next Community Bot life cycle, on the next Saturday.",
+    "COMMUNITY_BOT_INVEST": "Thank you for investing in Arbistar Community Bot. Please proceed with the payment to complete the order. Your invoice will be created once the order is confirmed.Please note that your investment will be available for the next Community Bot life cycle, on the next Saturday.",
+    "LICENSE_BOUGHT_ONE": "Thank you for investing in Arbistar ",
+    "LICENSE_BOUGHT_TWO": ". Your invoice will be created once the order is confirmed.",
+    "LICENSE_BUY_ONE": "Thank you for investing in Arbistar ",
+    "LICENSE_BUY_TWO": ". Please proceed with the payment to complete the order. Your invoice will be created once the order is confirmed.",
+    "FORCE_PAYMENT_TEXT": "Do you really want to force this payment?"
+  },
+  "GLOBAL_DIALOGS": {
+    "2FA": {
+      "DISABLE_2FA_TITLE": "Disable 2FA",
+      "DISABLE_ARE_YOU_SURE": "Are you sure you want to disable 2FA?",
+      "DOUBLE_2FA_TEXT": "Double 2fa authentication required",
+      "DISABLE_2FA_ERROR_TEXT": "For security reasons, you are not able to disable your 2FA. Please contact our Support Team to reset your 2FA.",
+      "ENABLE_2FA_WARNING_TITLE": "Setup 2FA",
+      "ENABLE_2FA_WARNING_TEXT": "For security reasons, we strongly recommend to enable your "
+    },
+    "LOGOUT_DELAY": {
+      "TITLE": "Inactive session",
+      "STAY_CONNECTED": "Stay Connected",
+      "AUTO_LOGOUT_SECURITY": "Auto logout security",
+      "INACTIVE_USER_TEXT": "You have been inactive for some time so the application will automatically logs you out for security reason. Then, you will then be redirected to the login page. You can stay connected by clicking on the stay connected button.",
+      "MINUTES": "minutes"
+    },
+    "REFERRAL_URL": {
+      "TITLE": "Referral Url",
+      "TEXT": ""
+    },
+    "KYC_WARN_TEXT": "Please complete your profile by submitting your "
+  },
+  "BANNERS": {
+    "USER_PROFILE": {
+      "TITLE": "User",
+      "PAGE": "Profile",
+      "ACTIONS": {
+        "IMPERSONATE": "Impersonate",
+        "NOTIFY": "Notify"
+      }
+    },
+    "USERS": {
+      "TITLE": "User list"
+    },
+    "KYC_REVIEW": {
+      "TITLE": "KYC Review"
+    },
+    "FRONT": {
+      "COMMUNITY": {
+        "TITLE": "Community Bot"
+      },
+      "MEMBERS": {
+        "TITLE": "Members"
+      },
+      "MY_FINANCE": {
+        "TITLE": "My Finance",
+        "SHOW_EURO": "Hide euro",
+        "SHOW_BTC": "Show euro"
+      },
+      "VOUCHERS": {
+        "TITLE": "Voucher"
+      }
+    }
+  },
+  "TABS": {
+    "USER_PROFILE": {
+      "MAIN_TABS": {
+        "ACTIVITY": "Activity",
+        "PRODUCTS": "Products",
+        "NETWORK": "Network",
+        "SETTINGS": "Settings",
+        "BANKING": "Banking",
+        "ORDERS": "Orders",
+        "NOTIFICATION_HISTORY": "Notification History"
+      },
+      "PRODUCTS_TABS": {
+        "SUMMARY": "Summary",
+        "COMMUNITY_BOT": "Community Bot",
+        "PERSONAL_BOT": "Personal Bot",
+        "PIPSTER_BOT": "Pipster Bot"
+      },
+      "SETTING_TABS": {
+        "PERSONAL_INFORMATION": "Personal Information",
+        "WALLETS": "Wallets",
+        "DOCUMENTS": "Documents",
+        "SECURITY": "Security",
+        "NOTIFICATIONS": "Notifications",
+        "DEACTIVATE_USER": "Deactivate User"
+      },
+      "NOTIFICATION_HISTORY_TABS": {
+        "MESSAGES": "Messages",
+        "CALENDAR": "Calendar",
+        "GO_TO_ORDER": "Go to order",
+        "GO_TO_LICENSE": "Go to license",
+        "GO_TO_VOUCHER": "Go to voucher",
+        "GO_TO_WITHDRAW": "Go to withdraw"
+      }
+    },
+    "COMMUNITY_BOT": {
+      "OPERATIONS": "Operations"
+    },
+    "MY_BONUS": {
+      "BONUS_LEVEL": "Bonus Level",
+      "REWARD_HISTORY": "Reward History"
+    }
+  },
+  "STEPPER": {
+    "AUTH": {
+      "REFERRAL_USER": "Referral User",
+      "CONSENT": "Consent",
+      "CREDENTIALS": "Credentials",
+      "EMAIL_VALIDATION": "Email Validation"
+    },
+    "VALIDATION": {
+      "PROFILE_INFORMATION": "Profile Information",
+      "WALLET": "Wallet",
+      "DOCUMENTS": "Documents",
+      "SUBMISSION": "Submission"
+    },
+    "PURCHASE": {
+      "ARBISTAR_CART": "Arbistar Cart",
+      "ADRESS": "Address",
+      "ADITIONAL_DOCUMENTS": "Additional Documents",
+      "PAYMENT": "Payment"
+    }
+  },
+  "AUTH_PAGES": {
+    "LOGIN": {
+      "SIGN_UP_TEXT": "Don't have an account yet?",
+      "FORGOT_PASSWORD": "Forgot Password?",
+      "SIGN_UP_LINK_TEXT": "Sign up",
+      "LOGIN_FAILED_TEXT": "Login failed",
+      "INVALID_CREDENTIALS_TEXT": "Invalid credentials",
+      "ACCOUNT_BLOCKED": "Your account has been deactivated. Please contact <a class='link' href='mailto:support@arbistar.com'>support@arbistar.com</a> for further information",
+      "SLOW_LOADING_TEXT": "The application is acting abnormally slow. This happens when you are browsing the app with a slow internet connection. Your services may also experience some degraded performance. As you still may use the app, we recommend you to come back again a bit later"
+    },
+    "FORGOT_PASSWORD": {
+      "YOU_REMEMBER": "You remember?"
+    },
+    "REGISTER": {
+      "SIGN_UP": "Sign Up",
+      "ACCOUNT_EXISTING": "Already have an account",
+      "STEP_ONE_INFO": "Please note that your referral member cannot be changed after your account creation",
+      "STEP_ONE_REFERRAL_TEXT": "Please fill the referral code field.",
+      "STEP_ONE_USER_TEXT": "Your referral member email is:",
+      "STEP_ONE_REFERRAL_USER_TEXT": "Referral User",
+      "STEP_TWO_TERMS_TEXT": "Terms & Conditions",
+      "STEP_TWO_PRIVACY_TEXT": "Privacy Policy",
+      "STEP_FOUR_MAILBOX_TEXT": "A message has been sent in your mailbox to validate your email",
+      "STEP_FOUR_CHECK_MAILBOX_TEXT": "Please check your inbox",
+      "STEP_FOUR_INFO_ONE": "If you don't find the email in your mailbox, please verify your spam folder. In case the email as not been received,",
+      "STEP_FOUR_INFO_TWO": " to resend it or contact support@arbistar.com."
+    },
+    "CONFIRM_EMAIL": {
+      "VALIDATED_TEXT": "Congrats you successfully validate your email.",
+      "WRONG_TOKEN_TEXT": "Wrong user or token.",
+      "LOADING_TEXT": "Please wait, your email is being confirmed"
+    },
+    "VERIFY_DEVICE": {
+      "CHECK_EMAIL_TEXT": "Please check your email in order to confirm the device.",
+      "2FA_CODE_TEXT": " Please provide a 2FA code.",
+      "WRONG_2FA_TEXT": "Wrong 2fa code!"
+    }
+  },
+  "KYC_PAGE": {
+    "CLOSE": "Are you sure you want to leave KYC",
+    "STEP_ONE": {
+      "TYPE_OF_USER": "Type of User:",
+      "VERIFIED_TEXT": "Are you an individual or an institutional user?",
+      "USER_INFORMATION": "User information",
+      "COMPANY_INFORMATION": "Company Information",
+      "MANDATORY_FIELD": "Mandatory Field"
+    },
+    "STEP_TWO": {
+      "ENTER_YOUR_WALLET": "Enter your wallet",
+      "EXISTING_WALLET_TEXT": "Your wallet has already been set. You will be able to change your wallet once your account is validated.",
+      "ENTERED_WALLET_TEXT": "You entered a wallet, do you wish to save it or do this later?"
+    },
+    "STEP_THREE": {
+      "UPLOAD_YOUR_DOCUMENTS": "Upload your documents",
+      "IDENTIFICATION_TYPE": "Identification type",
+      "MANDATORY_FIELD_TEXT": "Mandatory Field - Passport or ID is needed",
+      "EXPIRY_DATE_INFO": "Your document's expiry date should be at least 90+ days from now to be considered valid!"
+    },
+    "STEP_FOUR": {
+      "COMPLETE_ACCOUNT_PROCESS_TEXT": "Your account creation process is now complete.",
+      "SUBMIT_ACCOUNT_TEXT": "Please submit your account to the Arbistar team by clicking on the button below.",
+      "SUBMIT_TO_ARBISTAR_TEAM": "Submit to Arbistar Team",
+      "VALIDATING_ACCOUNT_TEXT": "Your account is being validated by the Arbistar Team. Please note that the validation usually occurs between 2 and 5 business days.",
+      "STEP_INFO": "For any question, please contact Arbistar Support Team.",
+      "GO_BACK": "Go back to Arbistar"
+    }
+  },
+  "USER_PAGE": {
+    "TITLE": "User List",
+    "BECOME_USER": "Become User",
+    "GO_TO_PROFILE": "Go to user profile",
+    "ACTIVITY": {
+      "MEMBER_SINCE": "Member since",
+      "LAST_6_ORDERS": "Last 6 Orders"
+    },
+    "SUMMARY": {
+      "CREATE_LICENSE": "Add License",
+      "EXPIRE_DIALOG": {
+        "TITLE": "Expire License",
+        "CONTENT": "Are you sure you want to expire the licence ?",
+        "INFO": "You can put 0 to make the license unlimited.",
+        "ALERT_SUCCESS": "You have succesfully expired the license!",
+        "ALERT_ERROR": "Error license epiring failed.",
+        "REASON_USER_REQ": "License expiration requested by user",
+        "REASON_FRAUD": "Dectection of Fraud",
+        "REASON_SUPPORT": "License expiration operated by Support",
+        "REASON_PRO_NO_AVA": "Product is no longer supported by Arbistar"
+      },
+      "ADD_DIALOG": {
+        "TITLE": "Add License",
+        "CONTENT": "Are you sure you want to add a licence for this user ?",
+        "ALERT_SUCCESS": "You have succesfully added the license!",
+        "ALERT_ERROR": "Error license cannot be added"
+      }
+    },
+    "BANKING": {
+      "OPENING_BALANCE": "Opening balance",
+      "TURNOVER": "Turnover",
+      "CLOSING_BALANCE": "Closing balance",
+      "CREATE_REGULARISATION": "Create a regularisation",
+      "USER_BANKING_HISTORY": "User Banking History",
+      "CURRENT_ACCOUNT": "Current Account",
+      "UPCOMING": "Upcoming",
+      "COMMUNITY_DEPOSIT": "Community Deposit",
+      "BANK_ACCOUNT": "Bank Account",
+      "REGULARISATION": "Regularisation",
+      "NOT_ACCOUNTED": "This operation is not accounted yet.",
+      "REGULARISATION_SUCCESS": "This account has been successfully regularised!",
+      "REGULARISATION_ERROR": "An error occured trying to regularise this account!"
+    },
+    "NETWORK": {
+      "FILTERS_BY_REWARDING": "Filter by Rewarding Types",
+      "BONUS_1": "Bonus 1",
+      "BONUS_2": "Bonus 2",
+      "BONUS_3": "Bonus 3",
+      "USER_REFERRAL_CODE": "User Referral Code",
+      "NUMBER_OF_NETWORK_MEMBERS": "Number of Network Members",
+      "USERS_NETWORK_GRAPH": "User's Network Graph",
+      "USERS_NETWORK_TABLE": "User's Network Table",
+      "USER_REWARDS": "User Rewards",
+      "TOTAL_REWARDS": "Total Rewards",
+      "NUMBER_OF_PRODUCTS_PURCHASED": "Number of products/licences purchased",
+      "TOP_SELLING": "Top Selling",
+      "TOTAL_SELLING": "Total Selling",
+      "REWARD_HISTORY": "Reward History"
+    },
+    "PERSONAL_INFORMATION": {
+      "COMPANY_INFORMATION": "Company Information",
+      "PROFILE_INFORMATION": "Profile Information",
+      "MOBILE_VERIFICATION": "Mobile Verification",
+      "NO_PHONE_NUMBER": "No phone number",
+      "NO_WALLETS": "No wallets"
+    },
+    "DOCUMENTS": {
+      "ADD_DOCUMENT": "Add Document"
+    },
+    "NOTIFICATIONS": {
+      "NOTIFICATION_STATUS": "Notification status",
+      "EMAIL": "Email",
+      "SMS": "Sms",
+      "TELEGRAM": "Telegram",
+      "INFORMATION_RELATED_TO_ARBISTAR": "Information related to Arbistar",
+      "INTERNAL_NOTIFICATION_SUCCESS": "Notification sent successfuly.",
+      "INTERNAL_NOTIFICATION_ERROR": "Notification could not be created."
+    },
+    "SECURITY": {
+      "SECURITY_STATUS": "Security Status",
+      "LAST_PASSWORD_UPDATE": "Last Password Update",
+      "2FA_ACTIVATION": "2FA Activation",
+      "ROLE_ATTRIBUTES": "Role Attributes",
+      "SECURITY_SYSTEM": "Security System"
+    },
+    "DEACTIVATE_USER": {
+      "DEACTIVATE_USER": "Deactivate User",
+      "DEACTIVATE_RE-ACTIVATE_USER": "Deactivate / Re-Activate user",
+      "DEACTIVATE_USER_TITLE": "Deactivate User",
+      "REACTIVATE_USER_TITLE": "Re-Activate User",
+      "DEACTIVATE_USER_TEXT": "Are you sure you want to deactivate this user?",
+      "REACTIVATE_USER_TEXT": "Are you sure you want to re-activate this user?",
+      "DELETE_USER_TITLE": "Delete User",
+      "DELETE_USER_TEXT": "This action canot be undone. Are you sure you want to proceed?"
+    },
+    "PRODUCTS": {
+      "SUMMARY": {
+        "ACQUIRED_PRODUCTS": "Acquired Products"
+      }
+    },
+    "WALLETS": {
+      "ARCHIVE_WALLET": "Archive Wallet",
+      "BLOCK_USER_WALLET": "Block User Wallet",
+      "UNBLOCK_USER_WALLET": "Unblock user wallet",
+      "RESEND_WALLET_CONFIRMATION": "Resend wallet confirmation",
+      "DIALOGS": {
+        "LOCK_DIALOG_TITLE": "Lock Wallet",
+        "LOCK_DIALOG_TEXT": "Are you sure you want to lock this wallet?",
+        "LOCK_DIALOG_TEXT_WITHDRAW": "Are you sure you want to lock this wallet? Please notify that if you lock the default wallet, all scheduled withdraws will be canceled.",
+        "UNLOCK_DIALOG_TITLE": "Unlock Wallet",
+        "UNLOCK_DIALOG_TEXT": "Are you sure you want to unlock this wallet?",
+        "SET_DEFAULT_DIALOG_TITLE": "Set Default Wallet",
+        "SET_DEFAULT_DIALOG_TEXT_WITHDRAW": "Please notify that if you change your default wallet, all scheduled withdraws will be canceled",
+        "SET_DEFAULT_DIALOG_TEXT": "Are you sure you want to change your default wallet?",
+        "ARCHIVE_DIALOG_TITLE": "Archive Wallet",
+        "ARCHIVE_DIALOG_TEXT_WITHDRAW": "Please note that upcoming withdraws related to the wallet will be canceled. Also, archived wallet cannot be retrieved. Are you sure you want to archive the wallet?",
+        "ARCHIVE_DEFAULT_DIALOG_TEXT": "Are you sure you want to archive this wallet? Please notify that if you archive your default wallet, all scheduled withdraws will be canceled.",
+        "ARCHIVE_DIALOG_TEXT": "Please note that archived wallet cannot be retrieved. Are you sure you want to archive the wallet?"
+      }
+    }
+  },
+  "ROLE_ATTRIBUTION_PAGE": {
+    "CHANGE_ROLE": "Edit Role",
+    "CURRENT_ROLES": "Current Roles : ",
+    "EDIT_ROLES_ALERT_SUCCESS": "You successfully edited the roles of this user!",
+    "EDIT_ROLES_ALERT_ERROR": "Editing roles for this user failed."
+  },
+  "COMMUNIQUES_PAGE": {
+    "CREATE_COMMUNIQUE": "Create Communique",
+    "EDIT_COMMUNIQUE": "Edit Communique"
+  },
+  "BOT_PROFITS_PAGE": {
+    "CREATE_PROFIT": "Create profit"
+  },
+  "KYC_REVIEW_PAGE": {
+    "KYC_REVIEW": "Subscriber Review",
+    "LOCKED_BY": "Locked by : ",
+    "REJECT_USER": "Reject user",
+    "NOTIFY_USER": "Notify User",
+    "REJECT_USER_REASON": "Please provide the reason for rejecting this user!",
+    "REJECT_USER_SUCCESS": "User has been successfuly rejected!",
+    "REASON": "Reason",
+    "VALIDATE_USER": "Validate user",
+    "VALIDATE_USER_MESSAGE": " Are you sure you want to validate this user?",
+    "SIGNING_UP": "Signing up",
+    "SIGNING_UP_BADGE": "Signing up...",
+    "NO_ANOMALY": "No anomaly detected",
+    "ANOMALY": "Anomaly detected",
+    "DOWNLOAD_FILE": "Click to visualize",
+    "VISUALISATION": "Visualisation",
+    "REVIEWER": "Reviewer"
+  },
+  "NOTIFY_DIALOG": {
+    "TITLE": "Notify",
+    "CONTENT": "Enter the message you wish to send to the user",
+    "MESSAGE": "Message"
+  },
+  "WITHDRAW_PAGE": {
+    "VALIDATED": "Scheduled",
+    "SCHEDULED": "Scheduled",
+    "CANCELED": "Canceled",
+    "PAID": "Paid",
+    "WITHDRAWED": "Withdrawed",
+    "CAPITAL_BTC": "Withdrawable capital",
+    "CAPITAL_EUR": "Estimated withdrawable capital",
+    "EXPECTED_PAY_DAY": "Expected Payment Date",
+    "PAID_AT": "Paid At",
+    "VIEW_WITHDRAW": "View Withdraw",
+    "REQUESTED_DATE": "Requested Date",
+    "VALIDATION_DATE": "Validation Date",
+    "EXPECTED_VALIDATION_DATE": "Expected Validation Date",
+    "WITHDRAWAL_DATE": "Withdrawal Date",
+    "WITHDRAW_FROM_DEPOSIT": "Amount to withdraw from your Deposit Account",
+    "WITHDRAW_FROM_CURRENT": "Amount to withdraw from your Current Account",
+    "TOTAL_WITHDRAW": "Total Amount to withdraw",
+    "TOTAL_AMOUNT": "Total Amount (Conversion Rate : 1BTC",
+    "ARBISTAR_FEES": "Arbistar Fees",
+    "WITHDRAWAL_AMOUNT": "Withdrawal Amount",
+    "WITHDRAWAL_AMOUNT_MSG": "Withdrawal Amount will be calculated following of the Bitcoin/Euro converastion Rate at the moment of the operation.",
+    "RATE": "Current BTC/EUR Rate",
+    "MESSAGE": "<p>Withdrawals ordered during the month from 1 to 31 will be credited to the user's bitcoin wallet from the first Saturday of the following month.</p>",
+    "REQUEST_DIALOG": {
+      "TITLE": " Request Withdraw",
+      "AVAILABLE_FROM_CURRENT": "Available Amount (Current Account) : ",
+      "AVAILABLE_FROM_DEPOSIT": "Available Amount (Deposit Account) : ",
+      "TOTAL_AMOUNT": "Total Amount to be withdraw :",
+      "FEES": "Fees will be applied",
+      "EFFECTIVE_DATE": "Effective Withdrawal Date :",
+      "WALLET_ADDRESS": "Wallet Address",
+      "NO_ADDRESS_WARNING": "Please add a wallet address in <a class=\"link\" href=\"/my-profile\">My Profile / Wallet</a> in order to request a withdraw.",
+      "BLOCKED_WALLET_WARNING": "Your default wallet has been blocked. Please add a new wallet in add a wallet address in <a class=\"link\" href=\"/my-profile\">My Profile</a> or contact Arbistar support team for more information."
+    },
+    "CANCEL_DIALOG": {
+      "TITLE": "Cancel Withdraw",
+      "CONTENT": "Please provide a reason for canceling this withdraw!"
+    },
+    "VALIDATE_DIALOG": {
+      "TITLE": "Validate Withdraw",
+      "CONTENT": "Are you sure you want to validate this withdraw?"
+    },
+    "CONFIRM_DIALOG": {
+      "TITLE": "Confirm Withdraw",
+      "CONTENT": "Are you sure you want to confirm this withdraw?"
+    },
+    "SETTINGS_DIALOG": {
+      "SET_AUTO": "Set Automatic Withdraw :",
+      "MIN_CURRENT": "Min Current Account Amount :",
+      "ALL_AVAILABLE_CAPITAL": "Withdraw all your available capital when reach"
+    },
+    "INSUFFICIENT_FUNDS_DIALOG": {
+      "TITLE": "Insufficient funds",
+      "CONTENT": "You cannot create a withdraw as you have no money within your Deposit Account!"
+    },
+    "NOT_VALIDATED_YET_DIALOG": {
+      "TITLE": "Request withdraw",
+      "CONTENT": "You will be able to withdraw as soon as your profile has been validated."
+    },
+    "SETUP_KYC_DIALOG": {
+      "TITLE": "Setup KYC to continue",
+      "CONTENT": "You have to setup your KYC in order to make a withdraw!"
+    }
+  },
+  "PRODUCTS_PAGE": {
+    "NOT_ALLOWED": "You are not allowed to invest more than 5 BTC",
+    "COMMUNITY_INVESTMENT": "Community contribution",
+    "PROFILE_REVIEWING_TEXT": "You will be able to purchase this product as soon as your profile has been validated.",
+    "PROFILE_NOT_VALIDATED_TEXT": "This product is under the anti fraud law. Please submit your KYC form in order to access this product.",
+    "ARBISTAR_PRODUCT_RANGE": "Arbistar Product Range",
+    "COMMUNITY": "Community Bot",
+    "ARE_YOU_SURE_TEXT": "Are you sure you want to claim this product?",
+    "INVEST_IN_COMMUNITY": "Invest in Community Bot",
+    "AMOUNT_TO_INVEST_TEXT": "Amount to be invested (minimum 300€)",
+    "PAY_WITH_CURRENT": "Pay with my current account",
+    "TERMS_TEXT": "Please read Terms & Conditions",
+    "YOUR_INVOICE_IS_READY": "Your invoice is ready",
+    "ONCE_PAID_TEXT": "Once paid, you will receive an email.",
+    "INVOICE_READY_TEXT": "<p class=\"text-center\">Your invoice is ready</p>\n <p class=\"text-center mt-1\">Once paid, you will receive an email.</p>",
+    "AMOUNT_IN_EURO_TEXT": "Amount in bictoins may vary depending on &euro;/BTC ratio at the payment date. <br/> Please note there is a 1% fee in the ArbistarPay payment gateway.",
+    "COMMUNITY_TEXT": "This plan consists of a community bot, we mak as a fund or investment bag among the whole community that wants to invest, by only contributing and the company will do all the operations for us. The only option you can Control is whether or not reinvest our profits from both operations and the commissions made by the referral system. This plan allows you to make minimum investments of 300 euros up to a peak of 50,000 euros, per user.",
+    "PERSONAL_BOT_LICENSE": "Personal Bot",
+    "PERSONAL_BOT_LICENSE_TEXT": "It is the star product, by which you can have the acquisition of a bot that will perform cryptocurrency arbitration operations automatically, but your money will be under our control, 100% protected in our exchanges. All this is an excellent advantage because having the control of your money is essential, although, on the other hand, it will be trades that somehow are not in our control but well.You can generate benefits daily and decide what to do with the benefits, whether you reinvest them, withdraw them, and store them in other wallets",
+    "VIP_LICENSE": "VIP Licence",
+    "VIP_LICENSE_TEXT": "Benefit from our all inclusive licence, providing a whole access to Arbistar available Products.",
+    "ANN_BOT": "Ann Bot",
+    "ANN_BOT_TEXT": "It’s a 100% automated forex robot. The robot is able to do trading on the most impact macro-economic news and also has a system that scans frequently (High Frequency) the tweets of the President of the United States Donald Trump. Such tweets have proved capable of moving markets at least in the short term. Our robot uses a system of morpho-syntax analysis of tweets to decide whether to open a trade or not and based on a back test of 8 years old.",
+    "PIPSTER_BOT": "Pipster Bot",
+    "PIPSTER_BOT_TEXT": "Pipster EA can be described as a Grid strategy (making sure it is not Martingale). However, it has an implemented cover script that better protects the account of the big waves of the market. Coverage means that the EA goes long and short in the same pair at the same time. The EA uses the one minute time frame and can exchange multiple currency pairs. As indicators, apply the RSI and MACD rules.",
+    "PIPSTER_PLUS_BOT": "Pipster Bot Plus",
+    "PIPSTER_PLUS_BOT_TEXT": "For accounts that have more than 30k on investment. Pipster Plus can be described as a Grid strategy (making sure it is not Martingale). However, it has an implemented cover script that better protects the account of the big waves of the market. Coverage means that the EA goes long and short in the same pair at the same time. The EA uses the one minute time frame and can exchange multiple currency pairs. As indicators, apply the RSI and MACD rules.",
+    "TRAILER_BOT": "Trailer Bot",
+    "TRAILER_BOT_TEXT": "The Trailer Bot is programmed to operate exactly as a price action strategy. Once prices start to rise or fall, this EA enters into transactions according to established rules. The main currency pair to operate is EUR-USD and can operate any batch size and any leverage. If you use the batch accumulator, this strategy can generate dazzling returns.",
+    "ARBIPAY_CARD": "ArbiPay Card",
+    "ARBIPAY_CARD_TEXT1": "Request your ArbipayCard, a recharge card that allows you to exchange your bitcoins for euros/dollars and use it in more than 150 countries. The maximum load in bitcoin or other cards is 50,000 euros/dollars per month and has very interesting limits.",
+    "ARBIPAY_CARD_TEXT2": "- Up to 20000 euros/dollars per day for purchases in shops.",
+    "ARBIPAY_CARD_TEXT3": "- Up to 3500 euros/dollars per day of cash withdrawals.",
+    "ARBIPAY_CARD_TEXT4": "It has a cost of 50 euros/dollars only once. It can take between 15 and 30 days to reach your home.",
+    "ARBIPAY_CARD_TEXT5": "You will find all the detailed information once you click on the button below. Complete the form and access your back-office of our card provider, with which you make a direct agreement. In the back-office you have all the functions to load the card, validate the kyc and other issues.",
+    "ARBIPAY_CARD_TEXT6": "If you have any doubts or questions, you should contact the support of our provider.",
+    "FAKE_BOT": "Fake bot",
+    "FAKE_BOT_TEXT": "A beautiful and powerful test bot that will make your tester life amazing.",
+    "SUBMIT_PAYMENT_ORDERING": "Submiting your order with the speed of light",
+    "SUBMIT_PAYMENT_INVESTING": "Please wait. Community Bot is investing your funds",
+    "SUBMIT_PAYMENT_CLAIMING": "Wait! Your FREE license is being claimed"
+  },
+  "PROFILE_PAGE": {
+    "CHANGE_EMAIL": "Change Email",
+    "CHANGE_EMAIL_HELP": "Please enter a new email address and the follow the intructions you will receive in your mailbox.",
+    "ADD_WALLET": "Add Wallet",
+    "ADD_NEW_WALLET_CONTENT": "Please provide a valid P2PKH or P2SH wallet address (which begin with the number 1 or 3).",
+    "DEFAULT_WALLET": "Default Wallet",
+    "SETUP_KYC": "Setup KYC",
+    "TOOLTIP_WALLET_CONFIRMING": "Your wallet has not been confirmed yet.",
+    "WALLET_RESEND_CONFIRMATION_EMAIL": "Resend email",
+    "TOOLTIP_WALLET_QUARANTINED": "Blocked by system",
+    "TOOLTIP_WALLET_ARCHIVED": "Archived by user"
+  },
+  "ORDERS_PAGE": {
+    "ORDER_NUMBER": "Order number",
+    "CREATION_DATE": "Creation date",
+    "REMAINING": "Remaining",
+    "PAYED": "Payed",
+    "NO_INVOICE": "No invoice",
+    "INVOICE_DATE": "Invoice Date",
+    "INVOICE_AdMOUNT": "Invoice Amount",
+    "INVOICE_TEXT": "Invoice is being generated",
+    "VIEW_ORDER": "View Order",
+    "EXPERITY_DATE": "Experity Date",
+    "SEE_VOUCHER": "See Voucher",
+    "VOUCHER": "Voucher",
+    "PAYMENT_GATEWAY": "Payment gateway",
+    "PAYMENT": "Payment",
+    "VAT": "VAT",
+    "TO_PAY": "To pay",
+    "OVERPAID": "Overpaid",
+    "REFUNDABLE": "Refundable",
+    "USED": "Used",
+    "EXPIRED": "Expired",
+    "AUTHOR": "Author",
+    "NO_AUTHOR": "No author",
+    "INVOICE_AMOUNT": "Invoice amount",
+    "TOTAL_AMOUNT_DETAILS": "Total Amount Details",
+    "TOTAL_PURCHASE": "Total Purchase",
+    "TOTAL_WITH_VAT": "Total with VAT",
+    "ARBISTAR_FEES": "Arbistar Fees",
+    "PAYMENT_IN_BTC_REF": "Payment in bitcoin ref",
+    "TRANSFER": "Transfer",
+    "LINES": "Lines",
+    "PAYMENT_DETAILS": "Payment Details",
+    "HISTORY_OF_OPERATIONS": "History of Operations",
+    "CANCEL_DIALOG": {
+      "TITLE": "Cancel Order",
+      "MESSAGE": "Do you really want to cancel this order?",
+      "ALERT": "You successfully canceled this order."
+    },
+    "REFUND_DIALOG": {
+      "TITLE": "Refund Order",
+      "MESSAGE": "Do you really want to refund this order?",
+      "ALERT": "You successfully refunded this order."
+    },
+    "CANCEL_VOUCHER_DIALOG": {
+      "TITLE": "Cancel voucher",
+      "CANCEL_REASON": "Please select a reason for canceling this voucher!",
+      "ALERT_SUCCESS": "You successfully canceled this voucher!",
+      "ALERT_ERROR": "Failed to cancel this voucher.",
+      "CANCEL_REASONS": {
+        "USER_REQ": "User requested cancel",
+        "FRAUD": "This is a fake voucher",
+        "EXPIRED": "The voucher is expired"
+      }
+    },
+    "EXTEND_VOUCHER_DIALOG": {
+      "TITLE": "Extend voucher",
+      "ALERT_SUCCESS": "You successfully extended this voucher!",
+      "ALERT_ERROR": "Failed to extend this voucher."
+    },
+    "ADD_VOUCHER_DIALOG": {
+      "TITLE": "Add voucher"
+    },
+    "OPERATION_TYPES": {
+      "NEW": "Creation of order",
+      "VALIDATED": "Waiting for payment",
+      "PAID": "Payment Received",
+      "INVOICED": "Invoice Creation"
+    }
+  },
+  "SECURITY_PAGE": {
+    "CHANGE_PASSWORD": "Change Password",
+    "2FA_ENABLING": "Enable 2 Factor Authentication",
+    "2FA_DISABLING": "Disable 2 Factor Authentication",
+    "CREDENTIALS": "Credentials",
+    "LOGIN_CONFIGURATION": "Login Configuration",
+    "2FA_CODE_STEP_1_TITLE": "Step 1.",
+    "2FA_CODE_STEP_1_CONTENT": "Download the Google Authenticator App for <a class='link' href='https://apps.apple.com/us/app/google-authenticator/id388497605' target='_blank'>iOS</a> or <a class='link' href='https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2' target='_blank'>Android</a>.",
+    "2FA_CODE_STEP_2_TITLE": "Step 2.",
+    "2FA_CODE_STEP_2_CONTENT": "Scan the following QR code:",
+    "2FA_CODE_STEP_3_TITLE": "Step 3.",
+    "2FA_CODE_STEP_3_CONTENT": "Submit the code that appears in the app:"
+  },
+  "WITHDRAW_DIALOG": {
+    "TEXT": "<p class=\"mt-2\">Remember that for reasons of strategy in the Arbitrage Market, you can not withdraw the contributions before 60 days.</p><p class=\"mt-2\">Withdrawals ordered during the month from 1 to 31 will be credited to the user's bitcoin wallet on the first Saturday of the following month.</p><p class=\"mt-2\">When you request a withdrawal you will be posted 25/50/75/100% according to your choice, of what is available at that moment and not what is available later that same month.</p><p class=\"mt-2\">If you decide to withdraw 100% of your contributions, you will be inactive in the user network and, therefore, you will stop obtaining the benefits of the Amigo Plan if you have equipment and your position will be deactivated.</p><p class=\"mt-2\"><b>VERY IMPORTANT:</b> Here you do NOT have your weekly benefits. To decide whether to charge or contribute again with your weekly benefits, you must go to the \"My Profile\" section and put the button in red (charge) or green (re-contribute) as you prefer.</p>",
+    "PLEASE_SELECT_TEXT": "Please select your withdraw percentage."
+  },
+  "DASHBOARD_PAGE": {
+    "ARBI_NEWS": {
+      "PAYCARD": {
+        "TITLE": "ArbiPayCard focus",
+        "CONTENT_ONE": "Arbistar offers you a unique bank card solution connected to your bitcoins accounts. With that card, you can exchange your bitcoins for euros/dollars and can even use it in more than 150 countries. Very usefull for traveling abroad or just quickly convert your bitcoins.",
+        "BUTTON_TEXT": "See the offer"
+      },
+      "MESSAGE_FROM_CEO": {
+        "TITLE": "Message from Arbistar CEO",
+        "CONTENT_ONE": "We are glad to present you are new version of our online platorm. May this app live long and prosper.",
+        "CONTENT_TWO": "I remind you that if you don't submit your KYC before 30 days your money will be mine."
+      },
+      "FORTHCOMING": {
+        "TITLE": "Forthcoming product",
+        "CONTENT_ONE": "We are now working on the Moon Bot based on a realtime intra-exchange path finder algorythms. The moon bot never rests and is keeping trades hot so we are always able to bring you more profits for your community contributions; in a stable un substainable way.",
+        "CONTENT_TWO": "The moon bot involve an infrastructure of more than 50 servers and is handling more than 10 billions path per second for an unless trading flow."
+      },
+      "LAST_CRYPTO_TOOL": {
+        "TITLE": "Last Crypto Tool",
+        "CONTENT_ONE": "ver dreamt about an solution where you could see a snapshot of all your exchanges & wallets over your cryptos? Our wallet manager has been made for you and our trading bots.",
+        "CONTENT_TWO": "But there is more! You can transfer or convert your currencies to another exchanges as easy as a drag and drop. More actions are available applying algorithms as a balancing or leverage features.",
+        "BUTTON_TEXT": "See more"
+      },
+      "LAST_FOREX_BOT": {
+        "TITLE": "Last Forex Bot review",
+        "CONTENT_ONE": "The Ann Bot",
+        "CONTENT_TWO": "The Ann Bot is surfing on the tweets of leaders influencing the market. Get advantage of realtime decision making before the other traders do.",
+        "BUTTON_TEXT": "See more"
+      },
+      "INTERESTS_SUGGESTION": {
+        "TITLE": "You may be interesed in..",
+        "CONTENT_ONE": "We don't own a PIPSTER yet but 78% of Arbistar customers did the step.",
+        "CONTENT_TWO": "The Pipster Bot is trading in the forex world and is based on a Grid Strategy. You need a Meta Trader account in order to use it. Arbistar is bringing you a complete solution so you can safely operate it. Claim your profits now!",
+        "BUTTON_TEXT": "See more"
+      },
+      "BEST_SELLER": {
+        "TITLE": "Best Seller",
+        "CONTENT_ONE": "The community deposit allows you to make a contribution and receive incredible profits over time. Our versatile trading solution is assuring a constant profits.",
+        "CONTENT_TWO": "But that's not all! You can actually increase your incomes growing your network in order to get commissions over their profits and even unlock bonuses.",
+        "BUTTON_TEXT": "See more"
+      }
+    },
+    "TOTAL_INVESTED_CURENT_CYCLE": "Total Invested current cycle",
+    "AVERAGE_REINVESTMENT_RATIO": "Average Reinvestment Ratio",
+    "ESTIMATED_TOTAL_INVESTMENT_NEXT_CYCLE": "Estimated Total Investment Next cycle",
+    "COLLECTED_ARBISTAR_COMMISSIONS_CURRENT_CYCLE": "Collected Arbistar Commissions Current cycle",
+    "COLLECTED_ARBISTAR_COMMISSIONS_LAST_CYCLE": "Collected Arbistar Commissions Last Cycle",
+    "COLLECTED_ARBISTAR_COMMISSIONS_LIFETIME": "Collected Arbistar Commissions Lifetime",
+    "USERS_USING_CB": "User using CB",
+    "TOTAL_CAPITAL_INVESTED": "Total Capital Invested",
+    "AVERAGE_CAPITAL_INVESTED": "Average Capital Invested",
+    "CUMULTED_INCOME": "Cumulated Income",
+    "CUMULTED_INCOMES": "Cumulated Incomes",
+    "LAST_COMPOUNDING": "Last Compounding",
+    "LAST_ROI": "Last ROI",
+    "MONTHLY_ROI": "Monthly ROI",
+    "CURRENT_CYCLE_ROI": "Current Cycle ROI",
+    "COLLECTED_PROFITS": "Collected Profits",
+    "COLLECTED_COMMISSION": "Collected Commissions",
+    "ACTIVE_CONTRIBUTION": "Active Contribution",
+    "TOTAL_PROFIT": "Total Profit",
+    "DAILY_GAINED_PROFIT": "Daily Gained Profit",
+    "WEEKLY_GRAPH_REVENUE": "Weekly Graph Revenue",
+    "ESTIMATED_PROFIT_TEXT": "Estimated profit based on ROI",
+    "ESTIMATED_PROFIT": "Estimated Profit:",
+    "ESTIMATED_COMMISSIONS_TEXT": "Estimated commissions based on ROI",
+    "ESTIMATED_COMMISSIONS": "Estimated Commission:",
+    "LAST_CYCLE_PERFORMANCES": "Last Cycle Performances",
+    "NETWORK_MEMBERS": "Network Members",
+    "TOP_SELLING": "Top Selling",
+    "TOTAL_SELLING": "Total Selling",
+    "COMMUNITY_REVENUS": "Community revenus",
+    "TOTAL_INVESTED": "Total Invested",
+    "TOTAL_TAKEN": "Total Taken",
+    "LICENCES_COUNT": "Licences count",
+    "DAYS_REMAINING": "Days Remaining",
+    "ALL_NETWORK_MEMBERS": "All Network Members",
+    "FIRST_LEVEL_OF_TEXT": "1st level of Network members only",
+    "TOTAL_WITHDRAWED": "Total Withdrawed",
+    "TOTAL_PROFITS": "Total Profits",
+    "TOTAL_COMMISSIONS": "Total Commissions"
+  },
+  "COMMUNITY_BOT_PAGE": {
+    "COMPOUDING_HISTORY": "Compounding History",
+    "DEPOSIT_HISTORY": "Deposit History",
+    "WITHDRAW_HISTORY": "Withdraw History",
+    "REINVEST_MY_TEXT": "Reinvest my weekly Compounding:",
+    "TOTAL_COMPOUNDING": "Total Compounding",
+    "COMMUNITY_BOT_LIFE_CYCLE": "Community Bot Life Cycle",
+    "LAST_COMMUNITY_BOT_CYLCLE_TITLE": "Last Community Bot Life Cycle",
+    "LAST_CYCLES_ACTIVITY": "Last Cycles Activity",
+    "CURRENT_COMMUNITY_BOT_CYCLE_TITLE": "Current Community Bot Life Cycle",
+    "TOTAL_USER_BY_CAPITAL_INVESTED": "Total User by Capital Invested"
+  },
+  "MY_BONUS_PAGE": {
+    "WORLD_LEADERSHIP_LEVEL_TEXT": "Those who reach a turnover of € 1,000,000 in total, to infinity without limits and with a turnover in Level 1 of € 100,000, will enter this World Bonus for life. (To obtain Bonus 3 you must be qualified with completing atleast once Bonus 2). This bonus will distribute 5% of the company's profits among those who meet these conditions. They will also allow them to belong to the World Club upon receiving trips, gifts, preferential treatment at events and recognitions. It is paid on the first Saturday of the month based on the earnings of the company of the previous month. To be able to pay you, you must be qualified for a whole month. The month in which you qualify. For the first time, it does not count toward collection. Members who promote other Online Businesses are excluded from this bonus. This is understood as businesses that are sold or promoted online. They are not prevented from investing in other businesses but promoting them. The rest of the bonuses and earnings are not affected by these circumstances. They will only stop collecting Bonus 3 since in the World Club we are interesting in Leaders who are only referents for Arbistar 2.0 SL.",
+    "10K_CONTRIBUTION_TEXT": "The Extra Direct Bonus will generate commissions for improving your first level of referred friends (LEVEL 1). For every 100,000 euros of turnover in its first level, that is, personal sales, ARBISTAR 2.0 will pay you a commission of 10%, that is, € 10,000 of commission paid in Bitcoin. To collect it you need to make 5 Personal Bot sales, that is, of the 100,000 euros minimum 25,000 euros must come from Personal Bot sales, and the rest (75,000) of contributions from Community Bot sales from your 1 direct level. When you repeat this bonus, you can collect it again. Every € 100,000 of turnover in LEVEL 1 you get € 10,000 of Bonus. (always with 5 direct sales Personal Bot for each payment).",
+    "10K_LEVEL_UNLOCK_TEXT": "Unlock requirement 6th level at 10th level: Have a turnover of more than 30,000 euros in your 1 LEVEL. The Unilevel Bonus gives you a profit for the fact of recommending one of the two products of Arbistar 2.0. Of the people that you recommend directly and also those who come recommended from these, up to 10 levels.",
+    "UNLOCK_REQUIREMENT_TEXT": "Unlock requirement 6th level at 10th level",
+    "HAVE_TURNOVER_TEXT": "Have a turnover of more than 30,000 euros in your top level",
+    "GET_ARBISTAR_COMMISSION_TEXT": "Get 10% Arbistar commission for each 100K contribution from Level 1 members",
+    "LICENSES_SALES_TEXT": "25.000€ from licenses sales",
+    "COMMUNITY_BOT_SALES_TEXT": "75.000€ of turnover in your network",
+    "VIP_TREATMENTS_TEXT": "Get 5% of Arbistar's profits & a VIP treatments",
+    "REACH_THE": "Complete bonus level 1 and level 2",
+    "REACH_TURNOVER_TEXT": "Reach a turnover of 1.000.000€ in your network"
+  },
+  "NETWORKS_PAGE": {
+    "NETWORK_EARNINGS": "My network members (by month)",
+    "NETWORK_EARNINGS_LAST_WEEK": "My network members (by day)",
+    "TOP_MEMBERS": "Top Members",
+    "PRODUCTS_ACTIVATED": "Products Activated",
+    "NO_ACTIVATED_PRODUCTS": "No Activated Products",
+    "YOUR_NETWORK_MEMBERS_TEXT": "Your network members around the world"
+  },
+  "NOTIFICATION_HISTORY_PAGE": {
+    "SUPPORT_ACTIONS": "Support Actions",
+    "USER_ACTIVITY": "User Activity",
+    "SUPPORT_ACTION": "Support action",
+    "USER_ACTION": "User action",
+    "ADMIN_USER": "Admin User: ",
+    "PRODUCT": "Product"
+  },
+  "USERS_PAGE": {
+    "BECOME_USER": "Become User",
+    "GO_TO_PROFILE": "Go to user profile"
+  },
+  "USER_NETWORK": {
+    "SHARE": {
+      "HEADER": "Increase your incomes!",
+      "TITLE": "Want to increase your profit with Arbistar?",
+      "CONTENT_REFERRAL_CODE": "Share your referral code to your contacts to expand your network and gain more profits!",
+      "CONTENT_NO_REFERRAL_CODE": "First, you have to buy at least one of our products to get your referral code!",
+      "SHARE_REFERRAL_LINK": "Share your referral link",
+      "SHARE_REFERRAL_TOKEN": "Share your referral token"
+    }
+  },
+  "PRODUCTS": {
+    "COMMUNITY": "Community Bot Investment"
+  },
+  "NOTIFICATIONS": {
+    "A_FEW_SECONDS_AGO": "a few seconds ago",
+    "A_MINUTE_AGO": "a minute ago",
+    "MINUTES_AGO": " minutes ago",
+    "AN_HOUR_AGO": "an hour ago",
+    "HOURS_AGO": " hours ago",
+    "A_DAY_AGO": "a day ago",
+    "MARK_ALL_AS_READ": "Mark all as read",
+    "MARK_AS_READ": "Mark as read",
+    "MARK_AS_UNREAD": "Mark as unread",
+    "NO_NOTIFICATIONS_TEXT": "Your notifications box is empty.",
+    "INTERNAL": {
+      "ENABLED_2FA": {
+        "CONTENT": "Your 2FA has been successfully enabled.",
+        "SUBJECT": "Setup 2FA - 2FA enabled"
+      },
+      "DISABLED_2FA": {
+        "CONTENT": "Your 2FA has been successfully disabled",
+        "SUBJECT": "Setup 2FA - 2FA disabled"
+      },
+      "CONFIRM_LOGIN_STRATEGY": {
+        "CONTENT": "Your Login strategy is now set up to <loginStrategy>.",
+        "SUBJECT": "Login Strategy changed"
+      },
+      "DEVICE_CONFIRMATION": {
+        "CONTENT": "A new <DEVICE_OS> device from <DEVICE_LOCATION> as been sucessfully accepted.",
+        "SUBJECT": "New Device has been accepted"
+      },
+      "UPDATE_EMAIL_TARGET": {
+        "CONTENT": "You have requested to change your email address. Please check your mailbox in order to confirm the new email address.",
+        "SUBJECT": "Change Email - Confirm your email"
+      },
+      "UPDATE_EMAIL_SUCCESS": {
+        "CONTENT": "Your email address has been successfully confirmed.",
+        "SUBJECT": "Change Email - Email Changed"
+      },
+      "WALLET_CONFIRMATION": {
+        "CONTENT": "You have requested to add a new wallet adress. Please check your mailbox in order to confirm the new wallet.",
+        "SUBJECT": "Add Wallet - Ask for Confirmation"
+      },
+      "WALLET_CONFIRMATION_SUCCESS": {
+        "CONTENT": "The wallet <address> address has been successfully activated.",
+        "SUBJECT": "Add Wallet - Confirmed"
+      },
+      "WALLET_DEFAULT": {
+        "CONTENT": "The wallet <address> address has set as default.",
+        "SUBJECT": "Add Wallet - Wallet set by default"
+      },
+      "KYC_SUBMISSION": {
+        "CONTENT": "Your account is being validated by the Arbistar Team. Please note that the validation usually occurs between 2 and 5 business days.",
+        "SUBJECT": "KYC Submission"
+      },
+      "KYC_VALIDATED": {
+        "CONTENT": "Your KYC has been validated by the Arbistar Team. You are now able to purchase Arbistar Products in our Store.",
+        "SUBJECT": "KYC Accepted"
+      },
+      "KYC_REJECTED": {
+        "CONTENT": "Your KYC has been refused by the Arbistar Team. Please check your mailbox for more information.",
+        "SUBJECT": "KYC Rejected + Reason"
+      },
+      "DELETION_SCHEDULED": {
+        "CONTENT": "We are sorry that you have decided to deleted your account, which will occur in 30 days. Please check your mailbox for more information.",
+        "SUBJECT": "Account Deletion by user"
+      },
+      "WITHDRAW_UPDATE": {
+        "CONTENT": "Your withdraw settings has been sucessfully changed.",
+        "SUBJECT": "Change of Withdraw Settings"
+      },
+      "WITHDRAW_REQUEST": {
+        "CONTENT": "A withdraw has been sucessfully requested.",
+        "SUBJECT": "Withdraw Request"
+      },
+      "WITHDRAW_SUCCESS": {
+        "CONTENT": "A withdraw settings has been sucessfully realized.",
+        "SUBJECT": "Withdraw Success"
+      },
+      "WITHDRAW_FAIL": {
+        "CONTENT": "Unfortunately, a withdraw has not been successful realized, because of <reason> reason. Please connect to your Withdraw Interface for more information",
+        "SUBJECT": "Withdraw Fail"
+      },
+      "ORDER_PENDING": {
+        "CONTENT": "Thank your for your order. Please proceed with the payment to fulfill the order.",
+        "SUBJECT": "Waiting for payment for your order"
+      },
+      "ORDER_EXPIRED": {
+        "CONTENT": "Your order has been canceled because the payment gateway delay has expired. Please proceed with another order.",
+        "SUBJECT": "Order Canceled because payment delay has expired"
+      },
+      "ORDER_UNDERPAID": {
+        "CONTENT": "Your order has been canceled because your payment did not reach the total amount required. Then, your total amount has been credited to your Current Account for later purpose.",
+        "SUBJECT": "Order Failed (Underpayment with Insufficient Funds)"
+      },
+      "ORDER_COMPLETED": {
+        "CONTENT": "Your order has been sucessfully completed. Thank you for purchasing an Arbistar Product!",
+        "SUBJECT": "Order Complete"
+      },
+      "ORDER_OVERPAID": {
+        "CONTENT": "Your order has been sucessfully completed. As we have detected an overpayment from your side, over-amount has been credited to your Current Account for later purpose.",
+        "SUBJECT": "Order Sucess (Overpayment)"
+      },
+      "ORDER_REFUNDED": {
+        "CONTENT": "You order has been successfully refunded.",
+        "SUBJECT": "Order Refunded"
+      },
+      "ORDER_INVOICED": {
+        "CONTENT": "Your order's invoice has been sucessfully created. Please connect to your Orders interface to download it.",
+        "SUBJECT": "Invoice"
+      },
+      "COMMUNITY_ENABLED": {
+        "CONTENT": "Thank you for investing in our Arbistar Community Bot. Your Community Bot Interface is now available",
+        "SUBJECT": "Community Bot is now available"
+      },
+      "LICENSE_ACTIVATED": {
+        "CONTENT": "Your %product_name% licence has been successfully activated.",
+        "SUBJECT": "%product_name% Licence Activated"
+      },
+      "LICENSE_EXPIRED_WITHIN_DAYS": {
+        "CONTENT": "Your %product_name% licence will expire within %days% .",
+        "SUBJECT": "Licence is expiring soon <days> days"
+      },
+      "LICENSE_EXPIRED": {
+        "CONTENT": "Your %product_name% licence licence is now expired. Consequently, the product is no longer available",
+        "SUBJECT": "Licence has expired"
+      },
+      "VOUCHER_CREATED": {
+        "CONTENT": "The voucher <voucher_name> with an amount of %amount% BTC has been created on your account",
+        "SUBJECT": "Voucher Creation"
+      },
+      "VOUCHER_EXPIRED": {
+        "CONTENT": "The voucher <voucher_name> is now expired.",
+        "SUBJECT": "Voucher Expired"
+      },
+      "VOUCHER_CANCELED": {
+        "CONTENT": "Arbistar Team has canceled your voucher <voucher>. Reasin: %canceled_reason%.",
+        "SUBJECT": "Voucher Canceled"
+      },
+      "VOUCHER_USED": {
+        "CONTENT": "Your voucher <voucher> has been used within your last order.",
+        "SUBJECT": "Voucher Used"
+      },
+      "NEW_NETWORK_MEMBER": {
+        "CONTENT": "Congratulations, <username> has joinded your network",
+        "SUBJECT": "New Member has signed up"
+      },
+      "NETWORK_ENABLED": {
+        "CONTENT": "Your referral token is now activated. Increase your profits by inviting user to join your network !",
+        "SUBJECT": "Referral Token has been enabled"
+      },
+      "MEMBER_ACTIVATE_LICENSE": {
+        "CONTENT": "Your team member <username> has activated a product !",
+        "SUBJECT": "Member has activated a product / invest in CB"
+      }
+    }
+  }
+}

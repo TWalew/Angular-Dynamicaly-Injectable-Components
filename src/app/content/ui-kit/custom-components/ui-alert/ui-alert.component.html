@@ -1,0 +1,67 @@
+<div class="grid $base-color">
+    <h1 class="text-center">Alert Component</h1>
+    <br>
+    <h3>Purpose : </h3>
+    <br>
+    <p>The alert component is used to display notifications and errors in the bottom right of the screen.</p>
+    <br>
+    <br>
+    <h3>Usage : </h3>
+    <br>
+    <p>Custom service: constructor(private alertService: AlertService)</p>
+    <br>
+    <p>To use the alert properly you have to pass some parameters to it's chosen method.</p>
+    <br>
+    <p>this.alertService.success(1, 2)</p>
+    <br>
+    <ul>
+        <li>
+            <p>1. <b>(string)</b> - This property is used to set the title inside the alert.</p>
+        </li>
+        <li>
+            <p>2. <b>(string)</b> - This property is used to set the text inside the alert..</p>
+        </li>
+    </ul>
+    <br>
+    <h1 style="color: red">IMPORTANT!</h1>
+    <br>
+    <b style="color: red">Alerts directly work with expression from translation files</b>
+    <br>
+    <br>
+    <b style="color: red">Alerts can be success, error, info, warning.</b>
+    <br>
+    <br>
+    <h3>Example : </h3>
+    <br>
+    <code>
+        <pre class="text-primary">
+            <b>Code used : </b>
+
+            this.alertService.success('COMMON.SUCCESS', 'This is a success example');
+
+            this.alertService.error('COMMON.ERROR', 'This is a error example');
+
+            this.alertService.warning('Warning!', 'This is a warning example');
+
+            this.alertService.info('Info!', 'This is a info example');
+        </pre>
+    </code>
+    <br>
+    <br>
+    <br>
+    <div class="d-inline-block m-2">
+        <button class="btn btn-success btn-" (click)="successAlert()">Success</button>
+    </div>
+        <div class="d-inline-block m-2">
+        <button class="btn btn-danger" (click)="errorAlert()">Error</button>
+    </div>
+        <div class="d-inline-block m-2">
+        <button class="btn btn-warn" (click)="warningAlert()">Warning</button>
+    </div>
+        <div class="d-inline-block m-2">
+        <button class="btn btn-info" (click)="infoAlert()">Info</button>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>

@@ -1,0 +1,14 @@
+<div class="breadcrumbs">
+    <p>
+        <fa-icon [icon]="['fas', icon]"></fa-icon>
+        <span *ngIf="category">
+            <span>{{ category | translate | titlecase }}</span>
+            <span class="slash">/</span>
+        </span>
+        <span><a routerLink="{{ mainRoute }}">{{ page | translate | titlecase }}</a></span>
+        <span *ngFor="let link of nestedLinks; index as i">
+                <span class="slash">/</span>
+                <a routerLink="{{ mainRoute | createRoute:nestedLinks:i }}">{{ link | titlecase }}</a>
+        </span>
+    </p>
+</div>

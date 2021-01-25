@@ -1,0 +1,19 @@
+<dialog-header [headerTitle]="data.title" [dialogRef]="dialogRef"></dialog-header>
+
+<div mat-dialog-content class="text-center">
+    <div [innerHTML]="data.text | translate"></div>
+</div>
+
+<div mat-dialog-actions class="mat-dialog-actions text-md-center"
+     [ngClass]="{ 'justify-content-center': !data.confirmButtonText || !data.withCancelButton }">
+    <button class="btn btn-primary btn-black mt-0"
+            mat-button
+            type="submit"
+            (click)="onCancel()"
+            *ngIf="data.withCancelButton">{{ (data.cancelButtonText || 'COMMON.CANCEL') | translate }}</button>
+
+    <button class="btn btn-primary mt-0"
+            mat-button type="submit"
+            *ngIf="data.confirmButtonText"
+            (click)="onConfirm()">{{ data.confirmButtonText | translate }}</button>
+</div>

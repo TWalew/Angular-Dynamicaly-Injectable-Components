@@ -1,0 +1,124 @@
+<div class="grid $base-color">
+    <h1 class="text-center">Loader Button Component</h1>
+    <br>
+    <h3>Purpose : </h3>
+    <br>
+    <p>The loader button component is used to simulate loading state for the button while the request is finished.</p>
+    <br>
+    <br>
+    <h3>Usage : </h3>
+    <br>
+    <p>Custom element: <b>&lt;loader-button>&lt;/loader-button></b></p>
+    <br>
+    <p>To use the loader button properly you have to pass some parameters to it's properties.</p>
+    <br>
+    <ul>
+        <li>
+            <p>1. <b>[butonTitle] (string)</b> - This property is used to set the text inside the button.</p>
+        </li>
+        <li>
+            <p>2. <b>[componentClass] (string)</b> - This property is used to set the css classes which the button will
+                have.</p>
+        </li>
+        <li>
+            <p>
+                3. <b>[spinner] (boolean)</b> - This property is used to set the template of the button while in loading
+                state. When = true the button has a spinner, when false it has the text Loading... .
+            </p>
+        </li>
+        <li>
+            <p>4. <b>[type] (string)</b> - This property is used to set the type of the button element.</p>
+        </li>
+        <li>
+            <p>
+                5. <b>[purpose] (string)</b> - This property is used to set the purpose of the button so the service
+                knows
+                which button's loading state you want to start / stop.
+            </p>
+        </li>
+        <li>
+            <p>
+                6. <b>(btnClick) (method)</b> - This property is used to emit an event when the button is clicked so it
+                can
+                start the method you passed to it.
+            </p>
+        </li>
+    </ul>
+    <br>
+    <h1 style="color: red">IMPORTANT!</h1>
+    <br>
+    <b style="color: red">In case you want the button to start loading you have to use the Loader Service.</b>
+    <br>
+    <br>
+    <p style="color: red">Example : </p>
+    <br>
+    <code>
+        <pre class="text-primary">
+
+            <b>Inject into constructor LoadingService.</b>
+
+            constructor(private loadingService: LoaderService)
+
+
+            <b>In your fetch data function.</b>
+
+            this.loadingService.start('your-purpose');
+            this.yourApiService.getSomething()
+            .subscribe(something =>
+                this.loadingService.stop('your-purpose');
+            );
+        </pre>
+    </code>
+    <br>
+    <br>
+    <b style="color: red">For the buttons to work with async data you have to use observable pipe and tap the the
+        current observable data once the data is fetched you can stop</b>
+    <br>
+    <br>
+    <p style="color: red">Example : </p>
+    <br>
+    <code>
+        <pre class="text-primary">
+            <b>Inject into constructor LoadingService.</b>
+
+            constructor(private loadingService: LoaderService)
+
+
+            <b>In your fetch data function.</b>
+
+            this.loadingService.start('your-purpose');
+            this.something = this.yourApiService.getSomething()
+            .pipe(tap(() => this.loadingService.stop('your-purpose')));
+
+        </pre>
+    </code>
+    <br>
+    <br>
+    <h3>Example : </h3>
+    <br>
+    <code>
+        <pre class="text-primary">
+            <b>Code used : </b>
+
+                &lt;loader-button [butonTitle]="'Loader Button'" [componentClass]="'btn btn-primary'" [type]="'submit'" [purpose]="purpose" (btnClick)="simulateRequestOnClick()">&lt;/loader-button>
+
+                &lt;loader-button [butonTitle]="'Loader Button'" [componentClass]="'btn btn-primary'" [spinner]="true" [type]="'submit'" [purpose]="purpose2" (btnClick)="simulateRequestOnClick2()">&lt;/loader-button>
+
+        </pre>
+    </code>
+    <br>
+    <br>
+    <br>
+    <div style="width: 200px">
+        <loader-button [buttonTitle]="'Loader Button'" [componentClass]="'btn btn-primary'" [type]="'submit'"
+            [purpose]="purpose" (btnClick)="simulateRequestOnClick()"></loader-button>
+    </div>
+    <br>
+    <div style="width: 200px">
+        <loader-button [buttonTitle]="'Loader Button'" [componentClass]="'btn btn-primary'" [spinner]="true"
+            [type]="'submit'" [purpose]="purpose2" (btnClick)="simulateRequestOnClick2()"></loader-button>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>

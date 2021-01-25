@@ -1,0 +1,6 @@
+<div class="toggle-slider" [ngClass]="componentClass">
+    <input [checked]="isChecked"
+           type="checkbox" [id]="formControlLabel"
+           [disabled]="isDisabled"
+           (change)="onToggleButton()" /><label [for]="formControlLabel">Toggle</label>
+</div>

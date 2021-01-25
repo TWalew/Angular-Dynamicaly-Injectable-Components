@@ -1,0 +1,21 @@
+dt {
+    font-weight: 600;
+    margin-bottom: .3125rem;
+}
+
+dd {
+    margin-bottom: 1.25rem;
+}
+
+dd:last-child {
+    margin-bottom: 0;
+}
+
+dl:last-child {
+    margin-bottom: 0;
+}
+
+ul.list {
+    list-style: disc;
+    padding-left: 1rem;
+}

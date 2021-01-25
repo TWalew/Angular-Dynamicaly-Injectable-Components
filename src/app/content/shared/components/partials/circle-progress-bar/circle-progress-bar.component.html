@@ -1,0 +1,16 @@
+<div *ngIf="innerStrokeColor" class="circle-progress" [ngClass]="componentClass">
+    <circle-progress
+        [percent]="percent"
+        [radius]="100"
+        [outerStrokeWidth]="6"
+        [innerStrokeWidth]="6"
+        [space]="-6"
+        [outerStrokeColor]="circleColor"
+        [innerStrokeColor]="innerStrokeColor"
+        [backgroundColor]="innerStrokeColor"
+        [animation]="true"
+        [animationDuration]="300"
+        [renderOnClick]="false"
+    ></circle-progress>
+    <fa-icon [icon]="['fas', icon]" style="color: white"></fa-icon>
+</div>

@@ -1,0 +1,65 @@
+<div class="grid">
+    <h1 class="text-center">Banner Component</h1>
+    <br>
+    <h3>Purpose : </h3>
+    <br>
+    <p>The banner component is used to give to the user information and some action with events.</p>
+    <br>
+    <br>
+    <h3>Usage : </h3>
+    <br>
+    <p>Custom element: <b>&lt;banner>&lt;/banner></b></p>
+    <br>
+    <p>To use the banner properly you have to pass some parameters to it's propertyes.</p>
+    <br>
+    <ul>
+        <li>
+            <p>
+                1. <b>[title] (string)</b> - This property is used to set the title of the banner.
+            </p>
+        </li>
+        <li>
+            <p>
+                2. <b>[bannerActionsTemplate] (TemplateRef)</b> - This property is used to set template of our actions.
+            </p>
+        </li>
+    </ul>
+    <br>
+    <h3>Example : </h3>
+    <br>
+    <pre class="text-primary">
+            <b>Code used : </b>
+
+            &lt;banner [title]="'Test Page - Test'" [bannerActionsTemplate]="bannerActions">&lt;/banner>
+
+    </pre>
+    <pre class="text-primary">
+            &lt;ng-template #bannerActions>
+                &lt;fa-icon [icon]="['fas', 'user-secret']">&lt;/fa-icon>  &lt;span class="banner-action-title">Impersonate&lt;/span> &lt;/button>
+
+                &lt;button (click)="onBlock()"> &lt;fa-icon [icon]="['fas', 'user-slash']">&lt;/fa-icon> &lt;span class="banner-action-title">Block&lt;/span> &lt;/button>
+
+                &lt;button (click)="onBan()"> &lt;fa-icon [icon]="['fas', 'user-shield']">&lt;/fa-icon> &lt;span class="banner-action-title">Ban&lt;/span>  &lt;/button>
+            &lt;/ng-template>
+    </pre>
+    <br>
+    <br>
+
+    <banner bannerTitle="Test Page" [bannerActionsTemplate]="bannerActions">
+    </banner>
+
+    <ng-template #bannerActions>
+        <button mat-ripple class="btn-icon">
+            <fa-icon [icon]="['fas', 'user-secret']"></fa-icon>
+            <span class="banner-action-title">Impersonate</span>
+        </button>
+        <button mat-ripple class="btn-icon">
+            <fa-icon [icon]="['fas', 'user-slash']"></fa-icon>
+            <span class="banner-action-title">Block</span>
+        </button>
+        <button mat-ripple class="btn-icon">
+            <fa-icon [icon]="['fas', 'user-shield']"></fa-icon>
+            <span class="banner-action-title">Ban</span>
+        </button>
+    </ng-template>
+</div>

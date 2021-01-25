@@ -1,0 +1,20 @@
+<div class="card-item  mb-4" *ngFor="let row of config.data; let i = index">
+  <div class="row p-2 border-primary border">
+    <div class="col-lg-3">
+      <h3 class="text-primary mb-2"><a>Position</a></h3>
+      <p>{{ row.position }}</p>
+    </div>
+    <div class="col-lg-3">
+      <h3 class="text-primary mb-2"><a>Element</a></h3>
+      <p>{{ row.name }}</p>
+    </div>
+    <div class="col-lg-3">
+      <h3 class="text-primary mb-2"><a>Mass</a></h3>
+      <p>{{ row.weight }}</p>
+    </div>
+    <div class="col-lg-3">
+      <h3 class="text-primary mb-2"><a>Symbol</a></h3>
+      <p>{{ row.symbol }}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,693 @@
+{
+  "COMMON": {
+    "FORM": {
+      "USERNAME": "Nombre de usuario",
+      "EMAIL": "Correo electrónico",
+      "REMEMBER_ME": "Recuérdame",
+      "REFERRAL_CODE": "Código de Referencia",
+      "PASSWORD": "Contraseña",
+      "CONFIRM_PASSWORD": "Confirmar Contraseña",
+      "NEW_PASSWORD": "Nueva contraseña",
+      "COMPANY_NAME": "Nombre de la empresa",
+      "DEPARTMENT": "Departamento",
+      "VAT_NUMBER": "Número de IVA",
+      "FIRST_NAME": "Nombre de pila",
+      "LAST_NAME": "Apellido",
+      "BIRTH_DATE": "Fecha de Nacimiento",
+      "NATIONALITY": "Nacionalidad",
+      "STREET_ADDRESS_1": "Dirección postal 1",
+      "STREET_ADDRESS_2": "Dirección postal 2",
+      "CITY": "Ciudad",
+      "STATE": "Estado",
+      "ZIP_CODE": "Código Postal",
+      "COUNTRY": "País",
+      "WALLET": "Billetera",
+      "PASSPORT": "Pasaporte",
+      "PASSPORT_NUMBER": "Número de pasaporte",
+      "NATIONAL_ID": "Documento nacional de identidad",
+      "SCANNED_PASSPORT": "Pasaporte escaneado",
+      "SCANNED_NATIONAL_ID": "ID nacional escaneado",
+      "PHOTO": "Foto",
+      "REGISTRATION_DOCUMENT": "K-Bis / Documento de Registro",
+      "SEARCH": "Buscar",
+      "MAX_LEVEL": "Nivel máximo",
+      "SELLING_BONUS": "Venta de Bonos",
+      "VIP": "Vip",
+      "AMOUNT": "Importe",
+      "COMMENT": "Comentario",
+      "ACCOUNT": "Cuenta",
+      "FULL_NAME": "Nombre completo",
+      "STATUS": "Estado",
+      "MOBILE_PHONE_NUMBER": "Número de teléfono móvil",
+      "CONFIRMATION_CODE": "Código de Confirmación",
+      "ADD_NEW_WALLET": "Añadir nuevo monedero",
+      "ORDER_TYPE": "Clase de orden",
+      "LOGIN_STRATEGY": "Estrategia de acceso",
+      "2FA_CODE": "2FA Código",
+      "ESTIMATED": "Estimado",
+      "PRICE": "Precio",
+      "WITHDRAW_PERCENT": "Porcentaje de retiro"
+    },
+    "FORM_ERRORS": {
+      "USERNAME": {
+        "EMPTY": "Por favor, introduzca un nombre de usuario."
+      },
+      "EMAIL": {
+        "EMPTY": "Por favor, introduzca su correo electrónico.",
+        "INVALID": "Por favor, introduzca un correo electrónico válido."
+      },
+      "PASSWORD": {
+        "EMPTY": "Por favor, introduzca su contraseña.",
+        "VALIDATION_1": "Utilice al menos 8 caracteres.",
+        "VALIDATION_2": "Usar caracteres en mayúsculas y minúsculas.",
+        "VALIDATION_3": "Utilice 1 o más números.",
+        "VALIDATION_4": "Utilice 1 o más caracteres especiales."
+      },
+      "NEW_PASSWORD": {
+        "EMPTY": "Por favor, introduzca su contraseña."
+      },
+      "CONFIRM_PASSWORD": {
+        "EMPTY": "Por favor, repita su contraseña.",
+        "DOESNT_MATCH": "Las contraseñas no coinciden."
+      },
+      "REFERRAL_CODE": {
+        "EMPTY": "Por favor, introduzca un código de referencia."
+      },
+      "COMPANY_NAME": {
+        "EMPTY": "Por favor, introduzca el nombre de su empresa."
+      },
+      "DEPARTMENT": {
+        "EMPTY": "Por favor, introduzca su departamento."
+      },
+      "VAT_NUMBER": {
+        "EMPTY": "Por favor, introduzca su número de IVA."
+      },
+      "FIRST_NAME": {
+        "EMPTY": "Por favor, introduzca su nombre."
+      },
+      "LAST_NAME": {
+        "EMPTY": "Por favor, introduzca su apellido."
+      },
+      "FULL_NAME": {
+        "EMPTY": "Please enter your full name."
+      },
+      "BIRTH_DATE": {
+        "EMPTY": "Por favor, introduzca su fecha de nacimiento.",
+        "INVALID": "Usted debe ser mayor de 18 años para presentar su solicitud."
+      },
+      "NATIONALITY": {
+        "EMPTY": "Por favor, elija su nacionalidad."
+      },
+      "STREET_ADDRESS_1": {
+        "EMPTY": "Por favor, introduzca su dirección."
+      },
+      "CITY": {
+        "EMPTY": "Por favor, introduzca su ciudad."
+      },
+      "STATE": {
+        "EMPTY": "Por favor, introduzca su estado."
+      },
+      "ZIP_CODE": {
+        "EMPTY": "Por favor, introduzca su código postal."
+      },
+      "COUNTRY": {
+        "EMPTY": "Por favor, introduzca su país."
+      },
+      "WALLET": {
+        "EMPTY": "Por favor, introduzca su billetera.",
+        "INVALID": "Invalid wallet ID."
+      },
+      "DOCUMENT_NUMBER": {
+        "EMPTY": "Por favor, introduzca su número de documento."
+      },
+      "DOCUMENT_FILE": {
+        "INVALID": "Los tipos de archivos permitidos son (.png | .jpeg | .pdf)."
+      },
+      "2FA_CODE": {
+        "EMPTY": "Por favor, introduzca su código 2FA.",
+        "WRONG": "El código contiene 6 dígitos.",
+        "INVALID": "Código 2FA no válido."
+      },
+      "AMOUNT": {
+        "EMPTY": "Por favor, introduzca una cantidad.",
+        "MINIMUM": "Importe mínimo 300 euros."
+      }
+    },
+    "ALERTS": {
+      "EMAIL_CONFIRMATION_TEXT": "Por favor, compruebe su buzón de correo para confirmar su correo electrónico.",
+      "EMAIL_CONFIRMATION": "Confirmación de correo electrónico",
+      "WALLET_CONFIRMATION_TEXT": "Por favor, compruebe su buzón de correo para confirmar su billetera.",
+      "WALLET_CONFIRMED_TEXT": "Su billetera ha sido confirmada con éxito.",
+      "PASSWORD_CHANGED_TEXT": "La contraseña ha sido cambiada con éxito.",
+      "PASSWORD_CHANGE": "Contraseña cambiada",
+      "PRODUCT_ACTIVATE": "Producto activado",
+      "PRODUCT_ACTIVATE_SUCCESS_TEXT": "El producto se ha activado correctamente.",
+      "PRODUCT_ACTIVATE_ERROR_TEXT": "No se puede activar este producto.",
+      "ORDER_CREATED": "Orden creada",
+      "ORDER_CREATED_TEXT": "Su pedido ha sido creado.",
+      "WITHDRAW_REQUEST": "Solicitud de Retiro",
+      "WITHDRAW_REQUEST_SUCCESS_TEXT": "Su solicitud de retiro ha sido enviada.",
+      "WITHDRAW_REQUEST_ERROR_TEXT": "Ya ha enviado su solicitud de retiro.",
+      "REINVESTMENT_RATIO": "Ratio de Reinversión",
+      "REINVESTMENT_RATIO_SUCCESS_TEXT": "Usted cambia con éxito su coeficiente de reinversión.",
+      "REINVESTMENT_RATIO_ERROR_TEXT": "No puede cambiar su proporción."
+    },
+    "DATES": {
+      "MONDAY": "Lunes",
+      "TUESDAY": "Martes",
+      "WEDNESDAY": "Miércoles",
+      "THURSDAY": "Jueves",
+      "FRIDAY": "Viernes",
+      "SATURDAY": "Sábado",
+      "SUNDAY": "Domingo"
+    },
+    "LOGIN": "Iniciar sesión",
+    "REQUEST": "Solicitar",
+    "FORGOT_PASSWORD": "Olvidó su contraseña",
+    "CHANGE": "Cambiar",
+    "WELCOME_MESSAGE": "Bienvenido a Arbistar !",
+    "NEXT": "Siguiente",
+    "VALIDATE": "Validar",
+    "REJECT": "Rechazar",
+    "PREVIOUS": "Anterior",
+    "SKIP": "Saltar",
+    "INDIVIDUAL": "Individuo",
+    "INSTITUTION": "Institución",
+    "DOCUMENTS_SUCCESSFULLY_UPLOADED": "Documento cargado con éxito",
+    "SUBMITTING": "Presentando",
+    "LOADING": "Cargando",
+    "NO_FILE_SELECTED": "Ningún archivo seleccionado",
+    "ADD_USER": "Añadir usuario",
+    "ALL": "Todos",
+    "YES": "Sí",
+    "NO": "No",
+    "RESET_2FA": "Reiniciar 2FA",
+    "RESET_PASSWORD": "Restablecer contraseña",
+    "FROM": "Desde",
+    "TILL": "Hasta",
+    "TO": "Para",
+    "OPERATIONS": "Operaciones",
+    "OPERATION": "Operación",
+    "DAY": "Día",
+    "DEBIT": "Débito",
+    "CREDIT": "Crédito",
+    "RATE": "Tasa",
+    "CANCEL": "Cancelar",
+    "CONFIRM": "Confirmar",
+    "EXPORT": "Exportación",
+    "DATE": "Fecha",
+    "ID": "Id",
+    "LEVEL": "Nivel",
+    "REWARDING_TYPE": "Tipo de recompensa",
+    "STATUS": "Estado",
+    "COMMISSIONS": "Comisiones",
+    "REFERRAL_USER": "Usuario de referencia",
+    "GRAPH": "Gráfico",
+    "SHOW_ALL": "Mostrar todos",
+    "SHOW_LESS": "Mostrar menos",
+    "TABLE": "Tabla",
+    "WALLETS": "Billeteras",
+    "DOCUMENTS": "Documentos",
+    "DOCUMENT": "Documento",
+    "EXTENSION": "Extensión",
+    "CREATOR": "Creador",
+    "TYPE": "Tipo",
+    "ACTION": "Acción",
+    "DOWNLOAD": "Descargar",
+    "COMMUNITY_BOT": "Comunidad Bot",
+    "PERSONAL_BOT": "Bot personal",
+    "LICENSES": "Licencias",
+    "REJECTED": "Rechazado",
+    "PENDING": "Pendiente",
+    "VIEW": "Ver",
+    "LOCK": "Cerradura",
+    "UNLOCK": "Desbloquear",
+    "2FA": "2FA",
+    "NONE": "Ninguno",
+    "DEVICE": "Dispositivo",
+    "PRODUCTS": "Productos",
+    "SERIAL": "Serial",
+    "EXPIRY": "Vencimiento",
+    "NEVER": "Nunca",
+    "NO_DATA_YET": "Aún no hay datos!",
+    "CREATE": "Crear",
+    "MESSAGE": "Mensaje",
+    "SCOPE": "Ámbito de aplicación",
+    "EDIT": "Tratar",
+    "ICON": "Icono",
+    "SUBMIT": "Enviar",
+    "NOTIFICATIONS": "Notificaciones",
+    "SHARE": "Compartir",
+    "ACTIONS": "Acciones",
+    "COMMUNITY_BOT_INVEST": "Comunidad Bot Invest",
+    "PERSONAL_BOT_LICENSE": "Licencia personal de bot",
+    "PIPSTER_LICENSE": "Licencia de Pipster",
+    "SEND_CODE": "Código de envío",
+    "EXPIRY_DATE": "Fecha de caducidad",
+    "PURCHASE_DATE": "Fecha de compra",
+    "INFOS": "Infos",
+    "LICENSE": "Licencia",
+    "RENEW": "Renovar",
+    "ACTIVATE": "Activar",
+    "VIEW_INVOICE": "Ver Factura",
+    "BUY": "Comprar",
+    "INVEST": "Invertir",
+    "BUY_LICENSE": "Comprar Licencia",
+    "ACTIVATE_THE_LICENSE": "Activar la licencia",
+    "IN": "en",
+    "ORDERING": "Pedidos",
+    "PAY": "Pagar",
+    "OWNED": "Poseído",
+    "FAILED": "Fallido",
+    "PAID": "Pagado",
+    "NEW": "Nuevo",
+    "COMPLETED": "Concluido",
+    "VALIDATED": "Validado",
+    "USER": "Usuario",
+    "SUPPORT": "Soporte",
+    "PASSPORT": "Pasaporte",
+    "ACTIVATING": "Activar",
+    "INVESTING": "Invertir",
+    "CANCELED": "Cancelado",
+    "PAYOUT": "Pago",
+    "SCHEDULED": "Programado",
+    "WITHDRAW": "Retirada",
+    "SETTINGS": "Ajustes",
+    "OK": "Ok",
+    "SET_DEFAULT": "Fijar valor por defecto",
+    "ORDERS": "Pedidos",
+    "ENABLED": "Habilitado",
+    "DISABLED": "Discapacitado",
+    "OLD": "Viejo",
+    "SETUP": "Configuración",
+    "NO_TYPE": "Ningún tipo",
+    "ROI": "ROI",
+    "TODAY": "Hoy",
+    "WEEKLY": "Semanalmente",
+    "MONTHLY": "Mensualmente",
+    "PROFITS": "Beneficios",
+    "REINVESTMENT": "Reinversión",
+    "COMMISSION": "Commission",
+    "SELLING_BONUS": "Selling Bonus",
+    "BONUS_1": "Bonus 1",
+    "BONUS_2": "Bonus 2",
+    "BONUS_3": "Bonus 3",
+    "COPY": "Copy",
+    "DISABLE": "Disable",
+    "NETWORK": "Network",
+    "NO_REFERRAL_USER": "No referral user",
+    "USERS_LIST": "Users List",
+    "RESET": "Reset",
+    "ENABLE": "Enable",
+    "ADD": "Add",
+    "AVERAGE": "average",
+    "COMPLETE_LATER": "Complete Later",
+    "STORE": "Store",
+    "BUY_LATER": "Buy Later",
+    "CLOSE": "Close",
+    "KYC": "KYC",
+    "SHOWING": "Showing",
+    "OF": "of",
+    "ENTRIES": "entries",
+    "THEME": "Theme",
+    "LIGHT": "Light",
+    "DARK": "Dark",
+    "ROLE_USER": "User",
+    "ROLE_SUPPORT": "Support",
+    "ROLE_ADMIN": "Admin",
+    "ROLE_SUPER_ADMIN": "Super Admin",
+    "ROLE_TESTER": "Tester",
+    "ROLES": "Roles",
+    "LANGUAGE": "Language",
+    "ENGLISH": "English",
+    "SPANISH": "Spanish"
+  },
+  "LOADING_APP": {
+    "LOADING_APP_TEXT": "Cargando app",
+    "FETCHING_DATA_TEXT": "Obtención de datos del servidor con la velocidad de la luz",
+    "WAIT_STUFF_TEXT": "Espera, cosas locas van a pasar"
+  },
+  "APP_ERRORS": {
+    "402": "Pago requerido.",
+    "403": "No se permite el acceso a este recurso.",
+    "404": "El recurso no existe.",
+    "429": "Usted alcanza su límite de tarifa.",
+    "500": "El servidor se estrelló.",
+    "503": "El servicio no está disponible temporalmente y pronto estará en línea.",
+    "529": "El Servidor Web no está disponible temporalmente y estará en línea en cualquier momento pronto."
+  },
+  "NAVIGATIONS": {
+    "PROFILE": "Perfil"
+  },
+  "SIDE_MENU": {
+    "CATEGORIES": {
+      "MAIN": "Principal",
+      "PRODUCTS": "Productos",
+      "COMMUNITY": "Comunidad",
+      "ADMINISTRATION": "Administración",
+      "MY_ACCOUNT": "Ajustes",
+      "MY_NETWORK": "Mi red",
+      "NOTIFICATIONS": "Notificaciones"
+    },
+    "PAGES": {
+      "DASHBOARD": "Tablero de mandos",
+      "COMMUNITY_BOT": "Comunidad bot",
+      "PERSONAL_BOT": "Bot personal",
+      "ARBI_PAY_CARD": "ArbiPayCard",
+      "PRODUCTS": "Productos",
+      "FINANCE": "Mis Finanzas",
+      "NETWORK": "Red",
+      "WITHDRAW": "Retirada",
+      "ACTIVITY": "Actividad",
+      "USER_LIST": "Usuarios",
+      "IDS_VALIDATION": "Validación de IDs",
+      "COMMUNIQUES": "Comunicados de prensa",
+      "BOT_PROFITS": "Ganancias del Bot",
+      "MY_PROFILE": "Mi perfil",
+      "SECURITY_SETTINGS": "Seguridad",
+      "KYC_REVIEW": "Revisión KYC",
+      "ORDERS": "Pedidos",
+      "LICENSES": "Licencias",
+      "NETWORK_MAPPING": "Mapeo de red",
+      "NETWORK_PERFORMANCE": "Prestaciones de la red",
+      "STORE": "Tienda",
+      "MY_BONUS": "Mi Bono",
+      "NETWORKING": "Trabajo en red",
+      "NETWORK_MAP": "Mapa de la red"
+    }
+  },
+  "HEADER_PROFILE_DROPDOWN": {
+    "MY_PROFILE": "Mi perfil",
+    "MY_BALANCE": "Mi saldo",
+    "USER_LIST": "Lista de usuarios",
+    "IDS_VALIDATION": "Validación de IDs",
+    "LOGOUT": "Cierre de sesión"
+  },
+  "HEADER_BUTTON_ACTIONS": {
+    "IMPERSONATING": "Deja de hacerte pasar por"
+  },
+  "GLOBAL_MESSAGES": {
+    "SECURITY": {
+      "MESSAGE": "La seguridad es importante! Completo",
+      "LINK_TEXT": "mi perfil"
+    }
+  },
+  "GLOBAL_DIALOGS": {
+    "2FA": {
+      "DOUBLE_2FA_TEXT": "Se requiere doble autenticación 2fa"
+    },
+    "LOGOUT_DELAY": {
+      "TITLE": "Inactive session",
+      "STAY_CONNECTED": "Manténgase conectado",
+      "AUTO_LOGOUT_SECURITY": "Seguridad de cierre de sesión automático",
+      "INACTIVE_USER_TEXT": "Ha estado inactivo durante",
+      "MINUTES": "actas"
+    }
+  },
+  "BANNERS": {
+    "USER_PROFILE": {
+      "TITLE": "Usuario",
+      "PAGE": "Perfil",
+      "ACTIONS": {
+        "IMPERSONATE": "Hacerse pasar por",
+        "NOTIFY": "Notificar"
+      }
+    }
+  },
+  "TABS": {
+    "USER_PROFILE": {
+      "MAIN_TABS": {
+        "ACTIVITY": "Actividad",
+        "PRODUCTS": "Productos",
+        "NETWORK": "Red",
+        "SETTINGS": "Ajustes",
+        "BANKING": "Banca"
+      },
+      "PRODUCTS_TABS": {
+        "SUMMARY": "Resumen",
+        "COMMUNITY_BOT": "Comunidad Bot",
+        "PERSONAL_BOT": "Bot personal",
+        "PIPSTER_BOT": "Botón Pipster"
+      },
+      "SETTING_TABS": {
+        "PERSONAL_INFORMATION": "Información personal",
+        "WALLETS": "Billeteras",
+        "DOCUMENTS": "Documentos",
+        "SECURITY": "Seguridad",
+        "NOTIFICATIONS": "Notificaciones",
+        "DEACTIVATE_USER": "Desactivar Usuario"
+      }
+    },
+    "COMMUNITY_BOT": {
+      "OPERATIONS": "Operaciones"
+    },
+    "MY_BONUS": {
+      "BONUS_LEVEL": "Nivel de bonificación",
+      "REWARD_HISTORY": "Historial de recompensas"
+    }
+  },
+  "STEPPER": {
+    "AUTH": {
+      "REFERRAL_USER": "Usuario de referencia",
+      "CONSENT": "Consentimiento",
+      "CREDENTIALS": "Credenciales",
+      "EMAIL_VALIDATION": "Validación de correo electrónico"
+    },
+    "VALIDATION": {
+      "PROFILE_INFORMATION": "Información de Perfil",
+      "WALLET": "Billetera",
+      "DOCUMENTS": "Documentos",
+      "SUBMISSION": "Presentación"
+    }
+  },
+  "AUTH_PAGES": {
+    "LOGIN": {
+      "SIGN_UP_TEXT": "Aún no tiene una cuenta?",
+      "FORGOT_PASSWORD": "Olvidó su contraseña?",
+      "SIGN_UP_LINK_TEXT": "Regístrese",
+      "LOGIN_FAILED_TEXT": "Error de inicio de sesión",
+      "INVALID_CREDENTIALS_TEXT": "Credenciales no válidas",
+      "ACCOUNT_BLOCKED": "Su cuenta ha sido desactivada. Por favor, contacte con <a class='link' href='mailto:support@arbistar.com'>support@arbistar.com</a> para más información.",
+      "SLOW_LOADING_TEXT": "La aplicación está actuando anormalmente lenta. Esto sucede cuando navegas por la aplicación con una conexión lenta a Internet. Es posible que sus servicios también experimenten un rendimiento degradado. Como todavía puedes usar la aplicación, te recomendamos que vuelvas un poco más tarde."
+    },
+    "FORGOT_PASSWORD": {
+      "YOU_REMEMBER": "Recuerdas?"
+    },
+    "REGISTER": {
+      "SIGN_UP": "Regístrese",
+      "ACCOUNT_EXISTING": "Ya tiene una cuenta",
+      "STEP_ONE_INFO": "Tenga en cuenta que su miembro de referencia no puede ser cambiado después de la creación de su cuenta.",
+      "STEP_ONE_REFERRAL_TEXT": "Por favor, rellene el campo de código de referencia.",
+      "STEP_ONE_USER_TEXT": "Su correo electrónico de referencia es:",
+      "STEP_ONE_REFERRAL_USER_TEXT": "Usuario de referencia",
+      "STEP_TWO_TERMS_TEXT": "Términos y condiciones",
+      "STEP_TWO_GDPR_TEXT": "Consentimiento GDPR",
+      "STEP_FOUR_MAILBOX_TEXT": "Se ha enviado un mensaje en su buzón para validar su correo electrónico",
+      "STEP_FOUR_CHECK_MAILBOX_TEXT": "Por favor, compruebe su bandeja de entrada",
+      "STEP_FOUR_INFO": "Si no encuentra el correo electrónico en su buzón, verifique su carpeta de correo no deseado o póngase en contacto con support@arbistar.com"
+    },
+    "CONFIRM_EMAIL": {
+      "VALIDATED_TEXT": "Felicitaciones por haber validado con éxito su correo electrónico.",
+      "WRONG_TOKEN_TEXT": "Usuario o token incorrecto.",
+      "LOADING_TEXT": "Por favor, espere, su correo electrónico está siendo confirmado"
+    },
+    "VERIFY_DEVICE": {
+      "CHECK_EMAIL_TEXT": "Por favor, compruebe su correo electrónico para confirmar el dispositivo.",
+      "2FA_CODE_TEXT": " Por favor, introduzca un código 2fa.",
+      "WRONG_2FA_TEXT": "Código 2fa incorrecto!"
+    }
+  },
+  "KYC_PAGE": {
+    "STEP_ONE": {
+      "TYPE_OF_USER": "Tipo de usuario:",
+      "VERIFIED_TEXT": "¿Es usted un usuario individual o institucional?",
+      "USER_INFORMATION": "Información para el usuario",
+      "COMPANY_INFORMATION": "Información de la empresa",
+      "MANDATORY_FIELD": "Campo obligatorio"
+    },
+    "STEP_TWO": {
+      "ENTER_YOUR_WALLET": "Ingrese su billetera",
+      "EXISTING_WALLET_TEXT": "Tu billetera ya está preparada. Usted podrá cambiar su billetera una vez que su cuenta haya sido validada.",
+      "ENTERED_WALLET_TEXT": "Ha introducido una billetera, ¿desea guardarla o desea hacerlo más tarde?"
+    },
+    "STEP_THREE": {
+      "UPLOAD_YOUR_DOCUMENTS": "Sube tus documentos",
+      "IDENTIFICATION_TYPE": "Tipo de identificación",
+      "MANDATORY_FIELD_TEXT": "Campo obligatorio - Se necesita pasaporte o documento de identidad"
+    },
+    "STEP_FOUR": {
+      "COMPLETE_ACCOUNT_PROCESS_TEXT": "El proceso de creación de su cuenta ha finalizado.",
+      "SUBMIT_ACCOUNT_TEXT": "Por favor, envíe su cuenta al equipo de Arbistar haciendo clic en el botón de abajo.",
+      "SUBMIT_TO_ARBISTAR_TEAM": "Enviar al equipo de Arbistar",
+      "VALIDATING_ACCOUNT_TEXT": "Su cuenta está siendo validada por el equipo de Arbistar. Tenga en cuenta que la validación se produce normalmente entre 2 y 5 días laborables..",
+      "STEP_INFO": "Para cualquier consulta, póngase en contacto con el Equipo de Soporte de Arbistar."
+    }
+  },
+  "USER_PAGE": {
+    "TITLE": "Lista de usuarios",
+    "BECOME_USER": "Conviértase en usuario",
+    "GO_TO_PROFILE": "Ir al perfil del usuario",
+    "BANKING": {
+      "OPENING_BALANCE": "Saldo inicial",
+      "TURNOVER": "Facturación",
+      "CLOSING_BALANCE": "Saldo final",
+      "CREATE_REGULARISATION": "Crear una regularización",
+      "USER_BANKING_HISTORY": "Historial de la Banca de Usuario",
+      "CURRENT_ACCOUNT": "Cuenta corriente",
+      "COMMUNITY_DEPOSIT": "Depósito Comunitario",
+      "BANK_ACCOUNT": "Cuenta bancaria",
+      "REGULARISATION": "Regularización"
+    },
+    "NETWORK": {
+      "FILTERS_BY_REWARDING": "Filtrar por tipos de recompensas",
+      "BONUS_1": "Bono 1",
+      "BONUS_2": "Bono 2",
+      "BONUS_3": "Bono 3",
+      "USER_REFERRAL_CODE": "Código de Referencia de Usuario",
+      "NUMBER_OF_NETWORK_MEMBERS": "Número de miembros de la Red",
+      "USERS_NETWORK_GRAPH": "Gráfico de red del usuario",
+      "USERS_NETWORK_TABLE": "Tabla de la red del usuario",
+      "USER_REWARDS": "Recompensas para el usuario",
+      "TOTAL_REWARDS": "Recompensas totales",
+      "NUMBER_OF_PRODUCTS_PURCHASED": "Número de productos/licencias comprados",
+      "TOP_SELLING": "Los más vendidos",
+      "TOTAL_SELLING": "Venta Total",
+      "REWARD_HISTORY": "Historial de recompensas"
+    },
+    "PERSONAL_INFORMATION": {
+      "COMPANY_INFORMATION": "Información de la empresa",
+      "PROFILE_INFORMATION": "Información de Perfil",
+      "MOBILE_VERIFICATION": "Verificación móvil",
+      "NO_PHONE_NUMBER": "No hay número de teléfono",
+      "NO_WALLETS": "Sin billeteras"
+    },
+    "DOCUMENTS": {
+      "ADD_DOCUMENT": "Añadir documento"
+    },
+    "NOTIFICATIONS": {
+      "NOTIFICATION_STATUS": "Status de notificación",
+      "EMAIL": "Correo electrónico",
+      "SMS": "Sms",
+      "TELEGRAM": "Telegram",
+      "INFORMATION_RELATED_TO_ARBISTAR": "Información relacionada con Arbistar",
+      "INTERNAL_NOTIFICATION_SUCCESS": "Notificación enviada con éxito.",
+      "INTERNAL_NOTIFICATION_ERROR": "No se ha podido crear un aviso."
+    },
+    "SECURITY": {
+      "SECURITY_STATUS": "Estado de seguridad",
+      "LAST_PASSWORD_UPDATE": "Última actualización de contraseña",
+      "2FA_ACTIVATION": "2FA Activación"
+    },
+    "DEACTIVATE_USER": {
+      "DEACTIVATE_USER": "Desactivar Usuario",
+      "DEACTIVATE_RE-ACTIVATE_USER": "Desactivar / Re-activar usuario",
+      "DEACTIVATE_USER_TITLE": "Desactivar Usuario",
+      "REACTIVATE_USER_TITLE": "Re-activar usuario",
+      "DEACTIVATE_USER_TEXT": "¿Estás seguro de que quieres desactivar a este usuario?",
+      "REACTIVATE_USER_TEXT": "¿Estás seguro de que quieres reactivar a este usuario?"
+    },
+    "PRODUCTS": {
+      "SUMMARY": {
+        "ACQUIRED_PRODUCTS": "Productos Adquiridos"
+      }
+    }
+  },
+  "COMMUNIQUES_PAGE": {
+    "CREATE_COMMUNIQUE": "Crear Comunicado",
+    "EDIT_COMMUNIQUE": "Editar Comunicados"
+  },
+  "BOT_PROFITS_PAGE": {
+    "CREATE_PROFIT": "Crear ganancias"
+  },
+  "KYC_REVIEW_PAGE": {
+    "KYC_REVIEW": "Revisión del suscriptor",
+    "LOCKED_BY": "Bloqueado por : ",
+    "REJECT_USER": "Rechazar usuario",
+    "REJECT_USER_REASON": "Por favor, escriba la razón por la que rechaza a este usuario!",
+    "REJECT_USER_SUCCESS": "El usuario ha sido rechazado con éxito!",
+    "REASON": "Razón",
+    "VALIDATE_USER": "Validar usuario",
+    "VALIDATE_USER_MESSAGE": "¿Estás seguro de que quieres validar a este usuario?",
+    "SIGNING_UP": "Inscribirse",
+    "SIGNING_UP_BADGE": "Inscribirse...."
+  },
+  "NOTIFY_DIALOG": {
+    "TITLE": "Notify",
+    "CONTENT": "Introduzca el mensaje que desea enviar al usuario",
+    "MESSAGE": "Mensaje"
+  },
+  "MY_NETWORK_PAGE": {
+    "NETWORK_PERFORMANCE": {
+      "TOP_MEMBERS": "Miembros superiores",
+      "PRODUCTS_ACTIVATED": "Productos activados"
+    }
+  },
+  "PRODUCTS_PAGE": {
+    "ARBISTAR_PRODUCT_RANGE": "Gama de productos Arbistar",
+    "ARBISTAR_PAY_FEES_TEXT": "Tarifas de ArbistarPay Hay una comisión del 1% en la pasarela de pago de ArbistarPay.",
+    "COMMUNITY": "Comunidad Bot",
+    "ARE_YOU_SURE_TEXT": "¿Está seguro de que desea activar este producto?",
+    "INVEST_IN_COMMUNITY": "Invertir en el bot de la comunidad",
+    "AMOUNT_TO_INVEST_TEXT": "Cantidad a invertir (mínimo 300€)",
+    "TERMS_TEXT": "Por favor, lea los Términos y Condiciones",
+    "YOUR_INVOICE_IS_READY": "Su factura está lista",
+    "ONCE_PAID_TEXT": "Una vez pagado, recibirás un correo electrónico.",
+    "INVOICE_READY_TEXT": "<p class=\"text-center\">Su factura está lista</p>\n <p class=\"text-center mt-1\">Una vez pagado, recibirás un correo electrónico.</p>",
+    "AMOUNT_IN_EURO_TEXT": "El importe en euros puede variar en función de la relación &euro;/BTC en la fecha de pago.",
+    "COMMUNITY_TEXT": "Este plan consiste en un bot de la comunidad, que hacemos como un fondo o bolsa de inversión entre toda la comunidad que quiere invertir, por sólo contribuir y la empresa hará todas las operaciones por nosotros. La única opción que usted puede controlar es si reinvertir o no nuestros beneficios de ambas operaciones y las comisiones realizadas por el sistema de referencia. Este plan le permite realizar inversiones mínimas de 300 euros hasta un máximo de 50.000 euros, por usuario.",
+    "PERSONAL_BOT_LICENSE": "Bot personal",
+    "PERSONAL_BOT_LICENSE_TEXT": "Es el producto estrella, por el cual usted puede tener la adquisición de un bot que realizará operaciones de arbitraje en criptocurrency automáticamente, pero su dinero estará bajo nuestro control, 100% protegido en nuestros intercambios. Todo esto es una excelente ventaja porque tener el control de su dinero es esencial, aunque, por otro lado, serán operaciones que de alguna manera no están bajo nuestro control sino que están bien, usted puede generar beneficios diariamente y decidir qué hacer con los beneficios, ya sea reinvertirlos, retirarlos y almacenarlos en otras carteras.",
+    "VIP_LICENSE": "Licencia VIP",
+    "VIP_LICENSE_TEXT": "Benefíciese de nuestra licencia \"todo incluido\", que le proporciona un acceso completo a los productos disponibles de Arbistar.",
+    "ANN_BOT": "Ann Bot",
+    "ANN_BOT_TEXT": "Es un robot Forex 100% automatizado. El robot es capaz de realizar operaciones con las noticias macroeconómicas de mayor impacto y también tiene un sistema que escanea con frecuencia (High Frequency) los tweets del Presidente de los Estados Unidos Donald Trump. Estos tweets han demostrado ser capaces de mover los mercados al menos a corto plazo. Nuestro robot utiliza un sistema de análisis morfo-sintáctico de tweets para decidir si abre una operación o no y se basa en una prueba retrospectiva de 8 años de antigüedad.",
+    "PIPSTER_BOT": "Pipster Bot",
+    "PIPSTER_BOT_TEXT": "Pipster EA puede describirse como una estrategia de Grid (asegurándose de que no sea Martingale). Sin embargo, tiene un script de portada implementado que protege mejor la cuenta de las grandes olas del mercado. La cobertura significa que la EA va larga y corta en el mismo par al mismo tiempo. El EA utiliza el marco de tiempo de un minuto y puede intercambiar múltiples pares de divisas. Como indicadores, aplique las reglas RSI y MACD.",
+    "PIPSTER_PLUS_BOT": "Pipster Bot Plus",
+    "PIPSTER_PLUS_BOT_TEXT": "For accounts that have more than 30k on investment. Pipster Plus can be described as a Grid strategy (making sure it is not Martingale). However, it has an implemented cover script that better protects the account of the big waves of the market. Coverage means that the EA goes long and short in the same pair at the same time. The EA uses the one minute time frame and can exchange multiple currency pairs. As indicators, apply the RSI and MACD rules.",
+    "TRAILER_BOT": "Trailer Bot",
+    "TRAILER_BOT_TEXT": "El Trailer Bot está programado para operar exactamente como una estrategia de acción de precios. Una vez que los precios comienzan a subir o bajar, esta EA realiza transacciones de acuerdo a las reglas establecidas. El principal par de divisas a operar es el EUR-USD y puede operar cualquier tamaño de lote y cualquier apalancamiento. Si utiliza el acumulador de lotes, esta estrategia puede generar retornos deslumbrantes.",
+    "ARBIPAY_CARD": "ArbiPay Card",
+    "ARBIPAY_CARD_TEXT": "<p>Solicite su ArbipayCard, una tarjeta de recarga que le permite cambiar sus bitcoins por euros/dólares y utilizarla en más de 150 países. La carga máxima en bitcoin u otras tarjetas es de 50.000 euros/dólares al mes y tiene unos límites muy interesantes.</p><p>- Hasta 20000 euros/dólares por día para compras en tiendas</p><p>- Hasta 3500 euros/dólares por día de disposición de efectivo.</p><p>- Hasta 3500 euros/dólares por día de disposición de efectivo. Tiene un coste de 50 euros/dólar sólo una vez. Puede tardar entre 15 y 30 días en llegar a su casa.</p><p>Encontrará toda la información detallada una vez que haga clic en el botón de abajo. Rellene el formulario y acceda a su back-office de nuestro proveedor de tarjetas, con el que tiene un acuerdo directo. En el back-office dispone de todas las funciones para cargar la tarjeta, validar el kyc y otras cuestiones.</p><p>Si tiene alguna duda o pregunta, debe ponerse en contacto con el soporte de nuestro proveedor.</p>"
+  },
+  "PROFILE_PAGE": {
+    "CHANGE_EMAIL": "Cambiar Email",
+    "ADD_WALLET": "Añadir Cartera",
+    "DEFAULT_WALLET": "Billetera predeterminada",
+    "TOOLTIP_WALLET_CONFIRMING": "your wallet has not been confirmed yet.",
+    "WALLET_RESEND_CONFIRMATION_EMAIL": "Resend email",
+    "TOOLTIP_WALLET_QUARANTINED": "Blocked by system"
+  },
+  "ORDERS_PAGE": {
+    "NO_INVOICE": "Ninguna factura",
+    "INVOICE_TEXT": "Se está generando la factura"
+  },
+  "SECURITY_PAGE": {
+    "CHANGE_PASSWORD": "Cambiar Contraseña",
+    "2FA_ENABLING": "2FA Habilitación",
+    "2FA_DISABLING": "2FA Desactivación",
+    "CREDENTIALS": "Credenciales",
+    "LOGIN_CONFIGURATION": "Configuración de inicio de sesión"
+  },
+  "WITHDRAW_DIALOG": {
+    "TEXT": "<p class=\"mt-2\">Recuerde que por razones de estrategia en el Mercado de Arbitraje, no podrá retirar las aportaciones antes de 60 días.</p><p class=\"mt-2\">Los retiros pedidos durante el mes del 1 al 31 se acreditarán en la cartera bitcoin del usuario el primer sábado del mes siguiente.</p><p class=\"mt-2\">Cuando usted solicita un retiro, se le enviará un 25/50/75/75/100% de acuerdo a su elección, de lo que está disponible en ese momento y no de lo que esté disponible más adelante ese mismo mes.</p><p class=\"mt-2\">Si decide retirar el 100% de sus aportaciones, quedará inactivo en la red de usuarios y, por lo tanto, dejará de obtener los beneficios del Plan Amigo si dispone de equipos y su posición se desactivará.</p><p class=\"mt-2\"><b>MUY IMPORTANTE:</b> Aquí usted NO tiene sus beneficios semanales. Para decidir si desea cobrar o contribuir de nuevo con sus beneficios semanales, debe ir a la sección \"Mi Perfil\" y poner el botón en rojo (cargo) o verde (re-contribución) como prefiera.</p>",
+    "PLEASE_SELECT_TEXT": "Por favor, seleccione su porcentaje de retiro."
+  },
+  "DASHBOARD_PAGE": {
+    "CUMULTED_INCOME": "Ingresos acumulados",
+    "ACTIVE_CONTRIBUTION": "Contribución activa",
+    "TOTAL_PROFIT": "Beneficio total",
+    "DAILY_GAINED_PROFIT": "Ganancias diarias",
+    "WEEKLY_GRAPH_REVENUE": "Ingresos gráficos semanales",
+    "ESTIMATED_PROFIT_TEXT": "Beneficio estimado basado en el retorno de la inversión",
+    "ESTIMATED_PROFIT": "Ganancia estimada:",
+    "ESTIMATED_COMMISSIONS_TEXT": "Comisiones estimadas basadas en el ROI",
+    "ESTIMATED_COMMISSIONS": "Comisión estimada:"
+  },
+  "COMMUNITY_BOT_PAGE": {
+    "COMPOUDING_HISTORY": "Historia de los compuestos",
+    "DEPOSIT_HISTORY": "Historial de depósitos",
+    "WITHDRAW_HISTORY": "Historial de retiros",
+    "REINVEST_MY_TEXT": "Reinvertir mi capitalización semanal:"
+  }
+}

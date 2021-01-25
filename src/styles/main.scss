@@ -1,0 +1,96 @@
+/* You can add global styles to this file, and also import other style files */
+@import './reset';
+@import './ingentics-strap/ingentics-strap';
+@import 'utilities';
+@import 'variables';
+@import 'material';
+
+@import 'components';
+@import 'dialog';
+@import 'stepper';
+@import 'table';
+@import 'highcharts';
+@import 'custom';
+
+body {
+    background: $main-background-color;
+    background: $main-background-gradient;
+    font-family: $default-font-family;
+    font-size: $default-font-size;
+    position: relative;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    fa-icon,
+    input,
+    label,
+    small,
+    strong {
+        color: $base-color;
+    }
+
+    img {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        -webkit-user-drag: none;
+    }
+}
+
+header {
+    background-color: $bg-header;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    -webkit-transition: all 0.1s ease;
+    -moz-animation: all 0.1s ease;
+    transition: all 0.1s ease;
+    box-shadow: $element-shadow;
+    z-index: 3;
+    height: 56px !important;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: $bg-footer;
+    border-top: 1px solid $border-panel-color;
+    color: $base-color;
+    padding: .875rem 1rem;
+
+    div {
+        a {
+            margin-right: 20px;
+            color: $base-color;
+
+            &:last-child {
+                margin-right: unset;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile-screen-size) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+
+        div {
+            margin-top: 20px;
+        }
+    }
+}

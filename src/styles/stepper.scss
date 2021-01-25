@@ -1,0 +1,67 @@
+.validation-stepper {
+    display: inline-block;
+    vertical-align: middle; /* Center vertically, part 2 */
+    border-radius: 5px;
+    width: 900px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    color: $base-color;
+    background: $bg-glass;
+    margin-bottom: unset !important;
+
+    .mat-progress-spinner circle,
+    .mat-spinner circle {
+        stroke: white;
+        text-align: center;
+    }
+
+    .mat-horizontal-stepper-header-container {
+        width: 60% !important;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .validation-stepper {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: $mobile-screen-size) {
+    .validation-stepper {
+        padding: 1rem;
+        width: 85%;
+
+
+        button.btn-account-submit {
+            width: 100% !important;
+        }
+
+        .mobile-flex {
+            flex-direction: column;
+
+            p {
+                margin-bottom: 10px;
+            }
+        }
+
+        .mobile-collide-btn {
+            button {
+                width: 60px !important;
+
+                &:first-child {
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                    margin-right: 0 !important;
+                }
+
+                &:nth-child(2) {
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
+            }
+        }
+    }
+}

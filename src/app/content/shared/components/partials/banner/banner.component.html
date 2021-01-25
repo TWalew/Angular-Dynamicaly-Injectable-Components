@@ -1,0 +1,20 @@
+<div class="banner">
+    <h3>{{ bannerTitle | translate }} <span> - </span> <span class="text-primary">{{ page | translate }}</span></h3>
+    <div class="banner-actions">
+        <ng-container *ngIf="!mobileQuery.matches; else buttonTemplate" [ngTemplateOutlet]="bannerActionsTemplate">
+        </ng-container>
+    </div>
+    <ng-template #buttonTemplate>
+        <button (click)="changeBannerActionDropdown()" class="btn-icon">
+            <fa-icon icon="ellipsis-v"></fa-icon>
+        </button>
+    </ng-template>
+</div>
+
+<div *ngIf="mobileQuery.matches;">
+    <div [ngStyle]="isExpanded ? { 'display': 'block' } : { 'display': 'none' }">
+        <div class="banner-actions mobile-banner-actions">
+            <ng-container [ngTemplateOutlet]="bannerActionsTemplate"></ng-container>
+        </div>
+    </div>
+</div>

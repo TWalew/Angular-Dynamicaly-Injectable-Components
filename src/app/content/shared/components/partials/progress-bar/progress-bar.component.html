@@ -1,0 +1,9 @@
+<div [ngClass]="progressClass">
+    <div [ngClass]="progressBarClass" [ngStyle]="{'width': progress + '%'}">
+        <span *ngIf="useValue">
+            <b>
+                <span *ngIf="!progressValue">{{ progress }}</span><span *ngIf="progressValue">{{ progressValue }}</span>{{ progressSymbol + progressBarLabel }}
+            </b>
+        </span>
+    </div>
+</div>

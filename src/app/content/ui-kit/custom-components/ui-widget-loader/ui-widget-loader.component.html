@@ -1,0 +1,100 @@
+<div class="grid">
+    <h1 class="text-center">Widget Loader Component</h1>
+    <br>
+    <h3>Purpose : </h3>
+    <p>
+        The widget loader is used to simulate the loading state inside widgets.
+    </p>
+    <br>
+
+    <h3>Usage: </h3>
+    <p>Custom element: <b>&lt;widget-loader>&lt;/widget-loader></b></p>
+    <br>
+
+    <ul>
+        <li>
+            <p>1. <b>[isLoading] (boolean)</b> - Used to set the loading state of the widget loader.</p>
+        </li>
+        <li>
+            <p>2. <b>[purpose] (string)</b> - Event emitter that emits each time you toggle the button.
+                Emits an array with the <b>formControlLabel</b> and the <b>isChecked</b> boolean</p>
+        </li>
+    </ul>
+    <br>
+
+    <br>
+    <h3 style="color: red">Usage 1 : </h3>
+    <p>You can use the LoadingService and start/stop the loader with the <b>purpose</b> property</p>
+    <br>
+    <code>
+        <p><b>Inject into constructor LoadingService.</b></p>
+        <p class="text-primary">
+            constructor(private loadingService: LoaderService)
+        </p>
+        <br>
+        <p><b>In your fetch data function.</b></p>
+        <p class="text-primary">
+            this.loadingService.start('your-purpose');
+            <br>
+            this.yourApiService.getSomething()
+            <br>
+            .subscribe(something =>
+            <br>
+            this.loadingService.stop('your-purpose');
+            );
+        </p>
+    </code>
+    <br>
+
+    <h3 style="color: red">Usage 2 : </h3>
+    <p>You can use the <b>isLoading</b> and pass a boolean in order to change the loading state.
+        <br>
+
+    <h3>Example: </h3>
+    <br>
+
+    <p><b>Code used: </b></p>
+
+    <br>
+
+    <code class="text-primary">
+        &lt;div class="widget-wrapper w-25 h-25">
+        <br>
+        &lt;h5>Example Loading&lt;/h5>
+        <br>
+        &lt;widget-loader [purpose]="purpose">&lt;/widget-loader>
+        <br>
+        &lt;/div>
+    </code>
+    <br>
+    <br>
+    <div class="widget-wrapper w-25 h-25">
+        <h5>Example Loading</h5>
+        <widget-loader [purpose]="purpose"></widget-loader>
+    </div>
+    <br>
+
+    <h3>Example: </h3>
+    <br>
+
+    <p><b>Code used: </b></p>
+
+    <br>
+
+    <code class="text-primary">
+        &lt;div class="widget-wrapper w-25 h-25">
+        <br>
+        &lt;h5>Example Loaded&lt;/h5>
+        <br>
+        &lt;widget-loader [isLoading]="false">&lt;/widget-loader>
+        <br>
+        &lt;/div>
+    </code>
+    <br>
+    <br>
+    <div class="widget-wrapper w-25 h-25">
+        <h5>Example Loaded</h5>
+        <widget-loader [isLoading]="false"></widget-loader>
+    </div>
+
+</div>

@@ -1,0 +1,15 @@
+<div class="widget-wrapper">
+    <h5 class="mb-1">{{ title | translate }}</h5>
+    <img *ngIf="imgSrc" [class]="imgClass" [src]="imgSrc" [alt]="imgAlt">
+    <div class="news-content">
+        <p *ngIf="contentOne">
+            {{ contentOne | translate }}
+        </p>
+        <p *ngIf="contentTwo" class="mt-1">
+            {{ contentTwo | translate }}
+        </p>
+        <div *ngIf="buttonTitle" class="mt-1">
+            <button class="btn btn-primary float-right">{{ buttonTitle | translate }}</button>
+        </div>
+    </div>
+</div>

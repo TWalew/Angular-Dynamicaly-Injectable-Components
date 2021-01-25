@@ -1,0 +1,54 @@
+<div class="grid $base-color">
+    <h1 class="text-center">Dialog Header Component</h1>
+    <br>
+    <h3>Purpose : </h3>
+    <br>
+    <p>The dialog header component is used for standart header of a dialog with icons and a X for close.</p>
+    <br>
+    <br>
+    <h3>Usage : </h3>
+    <br>
+    <p>Custom element: <b>&lt;dialog-header>&lt;/dialog-header></b></p>
+    <br>
+    <p>To use the dialog header properly you have to pass some parameters to it's properties.</p>
+    <br>
+    <ul>
+        <li>
+            <p>1. <b>[headerTitle] (string)</b> - This property is used to set the title of the dialog.</p>
+        </li>
+        <li>
+            <p>2. <b>[icon] (string)</b> - This property is used to set the icon in the dialog header.</p>
+        </li>
+        <li>
+            <p>
+                3. <b>[dialogRef] (MatDialogRef&lt;any>)</b> - This property is used to set the dialogRef for the close
+                to work.
+            </p>
+        </li>
+        <li>
+            <p>4. <b>[data] (any)</b> - This property is used to set the data to be passed on close if needed.</p>
+        </li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <h3>Example : </h3>
+    <br>
+    <code>
+        <pre class="text-primary">
+            <b>Code used : </b>
+
+                &lt;dialog-header headerTitle="Title" [dialogRef]="dialogRef">&lt;/dialog-header>
+
+        </pre>
+    </code>
+    <br>
+    <br>
+    <br>
+    <div style="width: 200px">
+        <dialog-header headerTitle="Title" [dialogRef]="'dialogRef'"></dialog-header>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>
